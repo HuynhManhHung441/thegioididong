@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.top-bar {
+  width: 100%;
+  max-width: 100vw;
+  height: 44px;
+}
+
+.slideshow--container {
+  width: 1200px;
+  max-width: 100vw;
+  height: 44px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-list {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 2s;
+}
+
+.banner img {
+  width: 1200px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-button {
+  width: 80%;
+  position: relative;
+  top: 28%;
+  left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev-btn {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-bottom: 3px solid gray;
+  border-left: 3px solid gray;
+}
+
+.next-btn {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-top: 3px solid gray;
+  border-right: 3px solid gray;
+}
+
+.prev-btn:hover {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-bottom: 3px solid whitesmoke;
+  border-left: 3px solid whitesmoke;
+}
+
+.next-btn:hover {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-top: 3px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
+}
