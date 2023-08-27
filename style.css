@@ -45,10 +45,10 @@ body {
 }
 
 .slide-button {
-  width: 80%;
+  width: 96%;
   position: relative;
   top: 28%;
-  left: 10%;
+  left: 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,4 +84,155 @@ body {
   transform: rotate(45deg);
   border-top: 3px solid whitesmoke;
   border-right: 3px solid whitesmoke;
+}
+
+/* TOP-NAV */
+
+.header {
+  width: 100vw;
+  height: 134px;
+  background-color: #f2c900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__top {
+  width: 1200px;
+  background-color: #f2c900;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.header__top img {
+  width: 228px;
+  height: 40px;
+}
+
+.search-box {
+  width: 301px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: aliceblue;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box input {
+  width: 260px;
+  border: none;
+}
+
+.search-box i {
+  font-size: 20px;
+}
+
+.cart {
+  width: 112px;
+  height: 40px;
+  background-color: #f2b206;
+  border-radius: 8px;
+  position: relative;
+}
+
+.cart > button {
+  width: 112px;
+  height: 40px;
+  background-color: #f2b206;
+  border-radius: 8px;
+  border: none;
+  text-align: right;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.cart > i {
+  background-color: #f2b206;
+  border-radius: 8px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 20px;
+}
+
+.tech-QA-game {
+  width: 248px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#tech {
+  width: 93px;
+  height: auto;
+  text-align: center;
+  font-size: 15px;
+}
+
+#QA {
+  width: 75px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-left: 1px solid whitesmoke;
+  border-right: 1.5px solid whitesmoke;
+}
+
+#GameAPP {
+  width: 93px;
+  height: auto;
+  text-align: center;
+  font-size: 15px;
+}
+
+.header__top > button {
+  width: 96px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2b206;
+}
+
+.inventory {
+  width: 137px;
+  height: 38px;
+  background-color: #f2b206;
+  position: relative;
+  border-radius: 5px;
+  padding: 3px 9px 5px 5px;
+}
+
+.inventory > i {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  font-size: 15px;
+}
+
+.inventory button {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2b206;
+  text-align: left;
+  font-size: 12px;
+}
+
+.header__main {
+  background-color: #f2c900;
+  height: 64px;
 }
