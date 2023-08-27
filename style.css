@@ -104,13 +104,13 @@ body {
 
 .header__top {
   width: 1200px;
-  background-color: #f2c900;
   height: 50px;
+  margin: auto;
+  background-color: #f2c900;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
 .header__top img {
@@ -233,6 +233,27 @@ body {
 }
 
 .header__main {
-  background-color: #f2c900;
+  width: 1200px;
   height: 64px;
+  margin: auto;
+  background-color: #f2c900;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.header__main a {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__main a > i {
+  margin-right: 5px;
+}
+
+.header__main a > .fa-sort-down {
+  margin-left: 5px;
 }
