@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f9ea89;
 }
 
 .top-bar {
@@ -269,4 +270,43 @@ body {
   height: 100%;
   /* height: auto; */
   object-fit: cover;
+}
+
+.featured-category {
+  width: 1200px;
+  height: 338px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 50px auto;
+  padding: 66px 40px 30px 40px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 112px 112px 112px 112px 112px 112px 112px 112px 112px 112px;
+  grid-template-rows: 124px 124px;
+}
+
+.featured-category > span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* background-color: aqua; */
+  color: black;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.featured-category > a {
+  /* background-color: aliceblue; */
+  width: 112px;
+  height: 124px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.featured-category > a > img {
+  width: 60px;
+  height: 60px;
 }
