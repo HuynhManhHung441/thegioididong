@@ -259,6 +259,26 @@ body {
   margin-left: 5px;
 }
 
+.PC-printer {
+  position: relative;
+}
+
+.PC-printer__list {
+  width: 160px;
+  height: 150px;
+  background-color: #f1f1f1;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px 0px 10px 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
 .big-banner--container-fluid {
   width: 100%;
   height: 450px;
