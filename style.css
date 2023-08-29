@@ -309,6 +309,37 @@ body {
   object-fit: cover;
 }
 
+.optional-promotion {
+  width: 1200px;
+  height: 100px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optional-promotion a {
+  width: 285px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  line-height: 30px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optional-promotion img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
 .featured-category {
   width: 1200px;
   height: 338px;
