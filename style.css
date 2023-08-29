@@ -354,6 +354,54 @@ body {
   border-radius: 15px;
 }
 
+/*XU HƯỚNG MUA SẮM */
+.shopping-trends {
+  width: 1200px;
+  height: 332px;
+  margin: 30px auto;
+  background-color: #feccb4;
+  border-radius: 15px;
+}
+
+.shopping-trends > p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  padding: 20px 0 20px 20px;
+}
+
+.shopping-trends__types {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shopping-trends__image {
+  width: 280px;
+  height: 236px;
+  position: relative;
+}
+
+.shopping-trends__image > img {
+  border-radius: 10px;
+}
+
+.shopping-trends__name {
+  position: absolute;
+  bottom: 52px;
+  left: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.shopping-trends__price {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  font-size: 15px;
+  color: #5757ed;
+}
+
 .featured-category {
   width: 1200px;
   height: 338px;
