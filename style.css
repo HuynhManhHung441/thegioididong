@@ -463,12 +463,160 @@ body {
   border-radius: 15px;
 }
 
+/* DỊCH VỤ TIỆN ÍCH */
+
+.convenient-service {
+  width: 1200px;
+  height: 242px;
+  margin: 20px auto;
+  /* padding: ; */
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.convenient-service__texts {
+  height: 66px;
+  /* margin-top: 20px; */
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: chartreuse; */
+}
+
+.convenient-service__texts a {
+  text-decoration: none;
+}
+
+.convenient-service__title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+}
+
+.convenient-service__others {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #535050;
+}
+
+.convenient-service__list {
+  padding: 0px 20px;
+  height: 146px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+
+.convenient-service__list a {
+  text-decoration: none;
+}
+
+.convenient-service__card {
+  width: 280px;
+  height: 146px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #feccb4;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 38px 210px;
+  grid-template-rows: 38px 90px;
+  column-gap: 10px;
+  grid-template-areas:
+    "r1c1 r1c2"
+    "r2c1 r2c2";
+}
+
+#convenient-service__card-1 {
+  background-color: #dceeff;
+}
+
+#convenient-service__card-2 {
+  background-color: #fef5cf;
+}
+
+#convenient-service__card-3 {
+  background-color: #ffefdb;
+}
+
+#convenient-service__card-4 {
+  background-color: #e1fecf;
+}
+
+.convenient-service__icon-background {
+  width: 38px;
+  height: 38px;
+  /* background-color: #f1f1f1; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background-card-icon-1 {
+  background-color: #c9e6fc;
+}
+#background-card-icon-2 {
+  background-color: #feefbc;
+}
+#background-card-icon-3 {
+  background-color: #ffe2cf;
+}
+#background-card-icon-4 {
+  background-color: #d9fac3;
+}
+
+.convenient-service__card i {
+  /* width: 38px;
+  height: 38px; */
+  /* border-radius: 50%; */
+  font-size: 20px;
+  /* text-align: center; */
+  line-height: 38px;
+  margin: 0px auto;
+}
+
+.convenient-service__card p {
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+  /* letter-spacing: 0.1px; */
+  /* word-spacing: px; */
+}
+.card__icon {
+  /* background-color: aliceblue; */
+
+  grid-area: r1c1;
+  border-radius: 50%;
+  /* background-color: #f3f3f3; */
+}
+
+.card__title {
+  /* font-size: 15px; */
+  grid-area: r1c2;
+  line-height: 38px;
+}
+
+.card__info {
+  width: 100%;
+  /* font-size: 15px; */
+  grid-area: r2c2;
+  padding-top: 8px;
+  line-height: 25px;
+}
+
 /* CHUYÊN TRANG THƯƠNG HIỆU */
 .brand-page {
   width: 1200px;
   height: 263px;
   margin: 20px auto;
-  background-color: aquamarine;
 }
 
 .brand-page p {
