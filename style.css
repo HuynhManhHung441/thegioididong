@@ -463,6 +463,67 @@ body {
   border-radius: 15px;
 }
 
+/* CHUYÊN TRANG THƯƠNG HIỆU */
+.brand-page {
+  width: 1200px;
+  height: 263px;
+  margin: 20px auto;
+  background-color: aquamarine;
+}
+
+.brand-page p {
+  font-size: 22px;
+  padding: 10px 0 15px 0;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.brand-page__slider {
+  width: 100%;
+  height: 212px;
+  position: relative;
+}
+
+.brand-page__banner {
+  width: 100%;
+  height: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.brand-page__banner img {
+  width: 393px;
+  height: 212px;
+  margin-left: 0px;
+  margin-right: 10.5px;
+  border-radius: 15px;
+}
+
+.brand-page__button {
+  width: 1244px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  transform: translateY(-50%);
+  /* left: -5%; */
+  /* z-index: 100; */
+}
+
+.brand-page__button button {
+  width: 44px;
+  height: 44px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  color: #333;
+  font-size: 20px;
+}
+
 /* TÌM KIẾM NHIỀU */
 
 .most-searched-tags {
