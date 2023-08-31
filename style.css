@@ -612,6 +612,96 @@ body {
   line-height: 25px;
 }
 
+/* 24H CÔNG NGHỆ */
+.technology-24h {
+  width: 1200px;
+  height: 350px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.technology-24h--main {
+  width: 895px;
+  height: 350px;
+  padding: 0px 20px;
+  background-color: #f3f3f3;
+
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: start; */
+}
+
+.technology-24h--top {
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technology-24h--top p {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.technology-24h--top a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #535050;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.technology-24h__content {
+  width: 100%;
+  height: 230px;
+  margin-top: 15px;
+
+  display: flex;
+  /* padding-top: 5px; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technology-24h__content a {
+  text-decoration: none;
+  width: 280px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.technology-24h__content a img {
+  width: 100%;
+  height: 158px;
+  border-radius: 10px;
+  /* padding-bottom: 10px; */
+}
+
+.technology-24h__content a p {
+  width: 100%;
+  height: 52px;
+  font-size: 16px;
+  padding-top: 12px;
+  /* text-align: center; */
+  line-height: 25px;
+  color: #494949;
+}
+
+.technology-24h--extra img {
+  width: 285px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* CHUYÊN TRANG THƯƠNG HIỆU */
 .brand-page {
   width: 1200px;
