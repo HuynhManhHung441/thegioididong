@@ -612,6 +612,54 @@ body {
   line-height: 25px;
 }
 
+/* GỢI Ý HÔM NAY */
+.today-suggestion {
+  width: 1200px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.today-suggestion > p {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.today-suggestion__types {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.today-suggestion__types a {
+  width: 285px;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.today-suggestion__types a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.today-suggestion__types a:hover {
+  background-color: #feb70b;
+}
+
 /* 24H CÔNG NGHỆ */
 .technology-24h {
   width: 1200px;
