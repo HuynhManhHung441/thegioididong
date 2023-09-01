@@ -615,9 +615,10 @@ body {
 /* GỢI Ý HÔM NAY */
 .today-suggestion {
   width: 1200px;
-  height: 2200px;
+  height: 2150px;
   margin: 20px auto;
-  background-color: aqua;
+  /* background-color: aqua; */
+  /* position: relative; */
 }
 
 .today-suggestion > p {
@@ -663,40 +664,143 @@ body {
 
 .today-suggestion__laptop-list {
   width: 1200px;
-  height: 2000px;
+  height: 1952px;
   margin-top: 15px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  /* background-color: chartreuse; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 16.25px;
+  /* grid-template-rows: repeat(4, 1rf); */
+  row-gap: 16px;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .today-suggestion__laptop-card {
   width: 227px;
   height: 476px;
   background-color: #ffffff;
-  padding: 0px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
   position: relative;
 }
 
 .today-suggestion__laptop-card > a {
   text-decoration: none;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
+}
+
+.today-suggestion__laptop-card > a > p {
+  height: 18px;
+}
+
+.installment {
+  width: 62px;
+  height: 18px;
+  font-size: 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 5px;
 }
 
 .laptop-card__img {
+  margin-top: 50px;
+  margin-bottom: 47px;
   width: 207px;
   height: 138px;
+  /* position: absolute; */
+  /* top: 78px;
+  right: 0px; */
 }
 
 .laptop-card__label {
   width: 45px;
   height: 45px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 70px;
+  right: 10px;
+}
+
+.discount-tag {
+  width: 113px;
+  height: 20px;
+  margin-bottom: 10px;
+  /* padding: 0 auto; */
+  padding-right: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #faab08, #d42611);
+  align-items: center;
+}
+
+.discount-tag img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.discount-tag p {
+  color: #f3f3f3;
+  font-weight: 400;
+}
+
+.laptop-name {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sell-method,
+.gift {
+  font-size: 14px;
+  color: #757474;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c01313;
+  margin-bottom: 15px;
+}
+
+.price span {
+  margin-left: 10px;
+  /* padding: 0 10px; */
+  color: #df6161;
+  background-color: #fff0e9;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.start {
+  font-size: 14px;
+  color: #fb6e31;
+  font-weight: bold;
+}
+
+.today-suggestion button {
+  width: 340px;
+  height: 48px;
+  margin: 15px auto;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #494949;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  /* position: absolute;
+  bottom: 100px;
+  left: -50%;
+  transform: translateX(-50%); */
+  /* text-align: center; */
 }
 
 /* 24H CÔNG NGHỆ */
