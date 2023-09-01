@@ -615,8 +615,9 @@ body {
 /* GỢI Ý HÔM NAY */
 .today-suggestion {
   width: 1200px;
-  height: 150px;
+  height: 2200px;
   margin: 20px auto;
+  background-color: aqua;
 }
 
 .today-suggestion > p {
@@ -658,6 +659,44 @@ body {
 
 .today-suggestion__types a:hover {
   background-color: #feb70b;
+}
+
+.today-suggestion__laptop-list {
+  width: 1200px;
+  height: 2000px;
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.today-suggestion__laptop-card {
+  width: 227px;
+  height: 476px;
+  background-color: #ffffff;
+  padding: 0px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.today-suggestion__laptop-card > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.laptop-card__img {
+  width: 207px;
+  height: 138px;
+}
+
+.laptop-card__label {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 /* 24H CÔNG NGHỆ */
