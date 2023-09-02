@@ -275,7 +275,7 @@ body {
   position: relative;
 }
 
-.up-arrow {
+.PC-printer__up-arrow {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -300,7 +300,7 @@ body {
 .PC-printer:hover > .PC-printer__list {
   width: 155px;
   height: 150px;
-  /* background-color: #10dd40; */
+  font-size: 13px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -308,8 +308,141 @@ body {
   flex-direction: column;
   justify-content: start;
 }
-/* .PC-printer__list::before {
 
+.PC-printer__list-item > a:hover {
+  font-weight: bold;
+}
+
+.covenient-service {
+  position: relative;
+}
+
+.covenient-service__list {
+  display: none;
+}
+
+.covenient-service__list-up-arrow {
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+
+.covenient-service__up-arrow {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background-color: #f3f3f3;
+  top: 3px;
+  right: 5%;
+}
+
+.covenient-service__list-item {
+  width: 100%;
+  height: 240px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  column-gap: 70px;
+  grid-template-areas:
+    "bill_1 finance-insurance_1 telecommunication_1"
+    "bill_2 finance-insurance_2 telecommunication_2"
+    "bill_3 finance-insurance_3 telecommunication_3"
+    "bill_4 finance-insurance_4 telecommunication_4"
+    "bill_5 finance-insurance_5 telecommunication_5"
+    "bill_6 finance-insurance_6 telecommunication_6"
+    "bill_7 finance-insurance_7 telecommunication_7"
+    "bill_8 finance-insurance_8 telecommunication_8";
+}
+
+.covenient-service__list-item p {
+  font-weight: bold;
+  border-bottom: 0.2px solid rgba(128, 128, 128, 0.1);
+}
+.covenient-service__list-item > a:hover {
+  font-weight: bold;
+}
+
+.bill1 {
+  grid-area: bill_1;
+  /* border-bottom: 0.5px solid gray; */
+  padding: 5px 0;
+}
+.bill2 {
+  grid-area: bill_2;
+}
+.bill3 {
+  grid-area: bill_3;
+}
+.bill4 {
+  grid-area: bill_4;
+}
+.bill5 {
+  grid-area: bill_5;
+}
+.bill6 {
+  grid-area: bill_6;
+}
+.bill7 {
+  grid-area: bill_7;
+}
+.bill8 {
+  grid-area: bill_8;
+}
+
+.finance-insurance1 {
+  grid-area: finance-insurance_1;
+  /* border-bottom: 0.5px solid gray; */
+  padding: 5px 0;
+}
+.finance-insurance2 {
+  grid-area: finance-insurance_2;
+}
+.finance-insurance3 {
+  grid-area: finance-insurance_3;
+}
+.finance-insurance4 {
+  grid-area: finance-insurance_4;
+}
+.telecommunication1 {
+  grid-area: telecommunication_1;
+  /* border-bottom: 0.5px solid gray; */
+  padding: 5px 0;
+}
+.telecommunication2 {
+  grid-area: telecommunication_2;
+}
+.telecommunication3 {
+  grid-area: telecommunication_3;
+}
+.telecommunication4 {
+  grid-area: telecommunication_4;
+}
+.telecommunication5 {
+  grid-area: telecommunication_5;
+}
+.telecommunication6 {
+  grid-area: telecommunication_6;
+}
+
+.covenient-service:hover > .covenient-service__list {
+  width: 780px;
+  height: 250px;
+  position: absolute;
+  top: 100%;
+  right: -5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* background-color: #d9fac3; */
+}
+
+/* .covenient-service__list-item > a:hover {
+  font-weight: bold;
 } */
 
 /* MAIN */
