@@ -259,6 +259,196 @@ body {
   margin-left: 5px;
 }
 
+/* PHỤ KIỆN */
+.accessory {
+  position: relative;
+}
+
+.accessory__list-up-arrow {
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+
+.accessory__up-arrow {
+  background-color: #f3f3f3;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 3px;
+  left: 10%;
+}
+
+.accessory__list-item {
+  width: 100%;
+  height: 340px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+}
+
+.accessory__list-item {
+  width: 100%;
+  height: 380px;
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: 190px 160px 230px 300px;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas:
+    "accessory--mobile1 accessory--laptop1 accessory--smart-home1 top-brand1"
+    "accessory--mobile2 accessory--laptop2 accessory--smart-home2 top-brand2"
+    "accessory--mobile3 accessory--laptop3 accessory--smart-home3 top-brand3"
+    "accessory--mobile4 accessory--laptop4 accessory--smart-home4 top-brand4"
+    "accessory--mobile5 accessory--laptop5 accessory--smart-home5 top-brand5"
+    "accessory--mobile6 . . top-brand6"
+    "accessory--mobile7 accessory--sound1 accessory--memmory1 accessory--others1"
+    "accessory--mobile8 accessory--sound2 accessory--memmory2 accessory--others2"
+    "accessory--mobile9 accessory--sound3 accessory--memmory3 accessory--others3"
+    "accessory--mobile10 accessory--sound4 accessory--memmory4 accessory--others4"
+    "accessory--mobile11 . . ."
+    "accessory--mobile12 . . .";
+}
+
+.accessory--mobile1 {
+  grid-area: accessory--mobile1;
+}
+.accessory--mobile2 {
+  grid-area: accessory--mobile2;
+}
+.accessory--mobile3 {
+  grid-area: accessory--mobile3;
+}
+.accessory--mobile4 {
+  grid-area: accessory--mobile4;
+}
+.accessory--mobile5 {
+  grid-area: accessory--mobile5;
+}
+.accessory--mobile6 {
+  grid-area: accessory--mobile6;
+}
+.accessory--mobile7 {
+  grid-area: accessory--mobile7;
+}
+.accessory--mobile8 {
+  grid-area: accessory--mobile8;
+}
+.accessory--mobile9 {
+  grid-area: accessory--mobile9;
+}
+.accessory--mobile10 {
+  grid-area: accessory--mobile10;
+}
+.accessory--mobile11 {
+  grid-area: accessory--mobile11;
+}
+.accessory--mobile12 {
+  grid-area: accessory--mobile12;
+}
+
+.accessory--laptop1 {
+  grid-area: accessory--laptop1;
+}
+.accessory--laptop2 {
+  grid-area: accessory--laptop2;
+}
+.accessory--laptop3 {
+  grid-area: accessory--laptop3;
+}
+.accessory--laptop4 {
+  grid-area: accessory--laptop4;
+}
+.accessory--laptop5 {
+  grid-area: accessory--laptop5;
+}
+
+.accessory--sound1 {
+  grid-area: accessory--sound1;
+}
+.accessory--sound2 {
+  grid-area: accessory--sound2;
+}
+.accessory--sound3 {
+  grid-area: accessory--sound3;
+}
+.accessory--sound4 {
+  grid-area: accessory--sound4;
+}
+
+.accessory--smart-home1 {
+  grid-area: accessory--smart-home1;
+}
+.accessory--smart-home2 {
+  grid-area: accessory--smart-home2;
+}
+.accessory--smart-home3 {
+  grid-area: accessory--smart-home3;
+}
+.accessory--smart-home4 {
+  grid-area: accessory--smart-home4;
+}
+.accessory--smart-home5 {
+  grid-area: accessory--smart-home5;
+}
+
+.top-brand1 {
+  grid-area: top-brand1;
+}
+.top-brand2 {
+  grid-area: top-brand2;
+}
+.top-brand3 {
+  grid-area: top-brand3;
+}
+.top-brand4 {
+  grid-area: top-brand4;
+}
+.top-brand5 {
+  grid-area: top-brand5;
+}
+.top-brand6 {
+  grid-area: top-brand6;
+}
+
+.accessory--memmory1 {
+  grid-area: accessory--memmory1;
+}
+.accessory--memmory2 {
+  grid-area: accessory--memmory2;
+}
+.accessory--memmory3 {
+  grid-area: accessory--memmory3;
+}
+.accessory--memmory4 {
+  grid-area: accessory--memmory4;
+}
+
+.accessory--others1 {
+  grid-area: accessory--others1;
+}
+.accessory--others2 {
+  grid-area: accessory--others2;
+}
+.accessory--others3 {
+  grid-area: accessory--others3;
+}
+.accessory--others4 {
+  grid-area: accessory--others4;
+}
+
+.accessory__list {
+  width: 780px;
+  height: 390px;
+  position: absolute;
+  top: 100%;
+  left: -10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: chartreuse;
+}
+
 .PC-printer {
   position: relative;
 }
