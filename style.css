@@ -264,6 +264,10 @@ body {
   position: relative;
 }
 
+.accessory__list {
+  display: none;
+}
+
 .accessory__list-up-arrow {
   width: 100%;
   height: 10px;
@@ -282,18 +286,16 @@ body {
 
 .accessory__list-item {
   width: 100%;
-  height: 340px;
+  height: 380px;
+  font-size: 13px;
   padding: 10px;
   border-radius: 10px;
   background-color: #f3f3f3;
-}
-
-.accessory__list-item {
-  width: 100%;
-  height: 380px;
-  font-size: 13px;
+  align-items: center;
   display: grid;
-  grid-template-columns: 190px 160px 230px 300px;
+  grid-template-columns: 160px 160px 180px 170px;
+  column-gap: 30px;
+  justify-content: space-between;
   grid-template-rows: repeat(12, 1fr);
   grid-template-areas:
     "accessory--mobile1 accessory--laptop1 accessory--smart-home1 top-brand1"
@@ -437,7 +439,17 @@ body {
   grid-area: accessory--others4;
 }
 
-.accessory__list {
+.accessory__list-item > p {
+  font-weight: bold;
+  padding: 5px 0;
+  border-bottom: 0.2px solid rgba(128, 128, 128, 0.1);
+}
+
+.accessory__list-item > a:hover {
+  font-weight: bold;
+}
+
+.accessory:hover > .accessory__list {
   width: 780px;
   height: 390px;
   position: absolute;
@@ -446,7 +458,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background-color: chartreuse;
 }
 
 .PC-printer {
