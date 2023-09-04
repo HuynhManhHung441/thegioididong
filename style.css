@@ -793,8 +793,8 @@ body {
   left: 10px;
 }
 
-.discount-tag {
-  width: 113px;
+.super-great-deal__discount-tag {
+  width: 123px;
   height: 20px;
   margin-bottom: 10px;
   padding-right: 10px;
@@ -807,25 +807,25 @@ body {
   align-items: center;
 }
 
-.discount-tag img {
+.super-great-deal__discount-tag img {
   width: 20px;
   height: 20px;
   object-fit: cover;
 }
 
-.discount-tag p {
+.super-great-deal__discount-tag p {
   color: #f3f3f3;
   font-weight: 400;
 }
 
-.laptop-name {
+.super-great-deal__name {
   font-size: 14px;
   color: #333;
   margin-bottom: 20px;
 }
 
 .sell-method,
-.gift {
+.super-great-deal__gift {
   font-size: 14px;
   color: #757474;
   margin-bottom: 15px;
