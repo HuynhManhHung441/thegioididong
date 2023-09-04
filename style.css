@@ -716,6 +716,151 @@ body {
   border-radius: 15px;
 }
 
+/* DEAL SIÊU KHỦNG */
+.super-great-deal {
+  width: 1200px;
+  height: 672px;
+  margin: 20px auto;
+  background-color: #fe7a00;
+  border-radius: 10px;
+  padding-bottom: 16px;
+}
+
+.super-great-deal__banner {
+  width: 100%;
+  height: 120px;
+}
+
+.super-great-deal__slideshow {
+  margin-top: 14px;
+  width: 97%;
+  height: 458px;
+  display: flex;
+  overflow: hidden;
+  margin: 0 1.5%;
+  justify-content: space-between;
+}
+
+.super-great-deal button {
+  width: 340px;
+  height: 48px;
+  margin: 15px auto 0 auto;
+  display: block;
+  border-radius: 5px;
+  border: none;
+}
+
+.super-great-deal__laptop-card {
+  width: 226px;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.super-great-deal__laptop-card > a {
+  text-decoration: none;
+}
+
+.super-great-deal__laptop-card > a > p {
+  height: 18px;
+}
+
+.installment {
+  width: 62px;
+  height: 18px;
+  font-size: 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 5px;
+}
+
+.super-great-deal__img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 206px;
+  height: 206px;
+  object-fit: cover;
+}
+
+.super-great-deal__label {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 210px;
+  left: 10px;
+}
+
+.discount-tag {
+  width: 113px;
+  height: 20px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #faab08, #d42611);
+  align-items: center;
+}
+
+.discount-tag img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.discount-tag p {
+  color: #f3f3f3;
+  font-weight: 400;
+}
+
+.laptop-name {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sell-method,
+.gift {
+  font-size: 14px;
+  color: #757474;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c01313;
+  margin-bottom: 15px;
+}
+
+.price span {
+  margin-left: 10px;
+  color: #df6161;
+  background-color: #fff0e9;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.super-great-deal__star {
+  font-size: 14px;
+  color: #fb6e31;
+  font-weight: bold;
+}
+
+.super-great-deal__star span {
+  color: #abaaaa;
+  font-size: 14px;
+  margin-left: 15px;
+  font-weight: normal;
+}
+
 /*XU HƯỚNG MUA SẮM */
 .shopping-trends {
   width: 1200px;
