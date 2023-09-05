@@ -832,6 +832,14 @@ body {
 
 .super-great-deal__laptop-card > a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.super-great-deal__pay {
+  width: 100%;
+  height: 18px;
 }
 
 .super-great-deal__laptop-card > a > p {
@@ -905,12 +913,16 @@ body {
 }
 
 .super-great-deal__name {
+  /* display: inline-flexbox; */
   font-size: 14px;
   color: #333;
   margin-bottom: 20px;
 }
 
-.sell-method,
+.super-great-deal__name:hover {
+  color: #4399f1;
+}
+
 .super-great-deal__gift {
   font-size: 14px;
   color: #757474;
