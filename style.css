@@ -1042,6 +1042,82 @@ main {
   font-weight: normal;
 }
 
+/* TUẦN LỄ SAMSUNG */
+.samsung-week {
+  width: 1200px;
+  height: 820px;
+  padding: 0 15px;
+  margin: 20px auto;
+  background-color: #0b37f4;
+  border-radius: 15px;
+}
+
+.samsung-week > p {
+  height: 92px;
+  padding: 20px 0 30px 0;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.samsung-week__banner-slideshow {
+  height: 202px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.samsung-week-slideshow__banners {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.samsung-week-slideshow__banners img {
+  width: 383px;
+  height: 202px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.samsung-week-banner__buttons {
+  width: 1224px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -27px;
+}
+
+.samsung-week-banner__buttons button {
+  width: 44px;
+  height: 44px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.samsung-week__card-slideshow {
+  height: 432px;
+  background-color: #c9e6fc;
+}
+
+.samsung-week > button {
+  width: 370px;
+  height: 48px;
+  background-color: #fbfbfb;
+  color: #3e3b3b;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+}
+
 /*XU HƯỚNG MUA SẮM */
 .shopping-trends {
   width: 1200px;
