@@ -1062,7 +1062,72 @@ main {
 }
 
 .cheap-cellphone__slideshow {
+  width: 1168px;
   height: 477px;
+  position: relative;
+}
+
+.cheap-cellphone__buttons {
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+  z-index: 10;
+  opacity: 0.5;
+}
+
+#cheap-cellphone__prev-btn {
+  width: 30px;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+  padding-left: 10px;
+  background-color: #f3f3f3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#cheap-cellphone__next-btn {
+  width: 30px;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  font-size: 20px;
+  padding-right: 30px;
+  background-color: #f3f3f3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#cheap-cellphone__prev-sign {
+  width: 25px;
+  height: 25px;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+#cheap-cellphone__next-sign {
+  width: 25px;
+  height: 25px;
+  border-top: 3px solid gray;
+  border-right: 3px solid gray;
+  position: absolute;
+  right: 10px;
+  transform: rotate(45deg);
+}
+
+.cheap-cellphone__slideshow:hover > .cheap-cellphone__buttons {
+  opacity: 1;
 }
 
 .cheap-cellphone__card-list {
@@ -1086,7 +1151,6 @@ main {
 }
 
 .cheap-cellphone__card > p {
-  height: 30px;
   padding: 20px 0 30px 0;
   text-transform: uppercase;
   font-size: 44px;
@@ -1214,8 +1278,6 @@ main {
   width: 1168px;
   height: 432px;
   position: relative;
-  display: flex;
-  justify-content: space-between;
 }
 
 .samsung-week-card__buttons {
@@ -1284,6 +1346,7 @@ main {
 .samsung-week__card-list {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   overflow: hidden;
 }
 
