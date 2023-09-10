@@ -651,10 +651,12 @@ body {
 /********    MAIN     *****/
 
 /* SIDEBAR-BANNER */
+
 .left-banner {
   position: fixed;
   left: 63px;
   top: 240px;
+  /* z-index: 200; */
 }
 
 .right-banner {
@@ -665,8 +667,10 @@ body {
 
 /* BIGGEST BANNER */
 .big-banner--container-fluid {
+  /* position: relative; */
   width: 100%;
   height: 450px;
+  /* z-index: 201; */
 }
 
 .big-banner--container-fluid img {
@@ -787,6 +791,85 @@ main {
   height: 100px;
   object-fit: cover;
   border-radius: 15px;
+}
+
+/* FLASH SALE */
+.flash-sale {
+  background-color: #3bacf0;
+  width: 1200px;
+  height: 938px;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
+}
+
+.flash-sale__timeline {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.flash-sale__timeline img {
+  width: 1200px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.flash-sale__timeline-info {
+  width: 420px;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flash-sale__timeline-info--day {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  line-height: 32px;
+  height: 32;
+}
+
+.flash-sale__timeline-info-hour {
+  height: 37px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.flash-sale__timeline-info-hour > span {
+  background-color: #f87803;
+  border-radius: 10px;
+  border: 8px solid #f87803;
+}
+
+.flash-sale__timeline > span {
+  width: 224px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #26fcbc;
+  border-radius: 20px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  right: 214px;
+  bottom: 10px;
+  box-shadow: 1px -1px 0 2px #ffffff;
+  cursor: pointer;
+}
+
+.flash-sale__slideshow {
+  width: 100%;
+  height: 770px;
+  background-color: aquamarine;
 }
 
 /* DEAL SIÊU KHỦNG */
