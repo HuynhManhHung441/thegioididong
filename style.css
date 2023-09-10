@@ -807,17 +807,14 @@ main {
 .super-great-deal__slider {
   width: 100%;
   height: 458px;
-  /* padding: 0 16px; */
   position: relative;
 }
 
 .super-great-deal__slideshow {
-  /* margin-top: 14px; */
   width: 1168px;
   height: 458px;
   display: flex;
   overflow: hidden;
-  /* margin: 0 auto; */
   margin: 0 16px;
   justify-content: space-between;
 }
@@ -1043,6 +1040,99 @@ main {
   font-size: 14px;
   margin-left: 15px;
   font-weight: normal;
+}
+/* ĐIỆN THOẠI GIÁ RẺ*/
+.cheap-cellphone {
+  width: 1200px;
+  height: 701px;
+  padding: 0 16px 16px 16px;
+  background-color: #920101;
+  border-radius: 0 0 15px 15px;
+  margin: 0 auto;
+}
+
+.cheap-cellphone__banner {
+  transform: translateX(-16px);
+  margin-bottom: 19px;
+}
+.cheap-cellphone__banner img {
+  width: 1200px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.cheap-cellphone__slideshow {
+  height: 477px;
+}
+
+.cheap-cellphone__card-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cheap-cellphone__card {
+  width: 226px;
+  height: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  background-image: url(./static/images/cheap-cellphone/Frame-knockout-desktop-226x500.webp);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cheap-cellphone__card > p {
+  height: 30px;
+  padding: 20px 0 30px 0;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cheap-cellphone__card > a {
+  text-decoration: none;
+}
+
+.cheap-cellphone__product {
+  width: 206px;
+  height: 213px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: 1s;
+}
+
+.cheap-cellphone__img {
+  width: 206px;
+  height: 206px;
+}
+
+.cheap-cellphone__label {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.see-more-button {
+  display: block;
+  width: 340px;
+  height: 48px;
+  background-color: #ffffff;
+  margin: 20px auto 0 auto;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 48px;
+  color: #535050;
+  text-align: center;
+  border-radius: 10px;
 }
 
 /* TUẦN LỄ SAMSUNG */
@@ -1619,8 +1709,10 @@ main {
 }
 
 .product-card-payment {
+  width: 100%;
   height: 23px;
-  /* margin-bottom: 15px; */
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .installment {
@@ -1631,7 +1723,8 @@ main {
   background-color: #f1f1f1;
   color: #333;
   border-radius: 2px;
-  margin-right: 4px;
+  /* margin-right: 4px; */
+
   padding: 3px;
 }
 
