@@ -16,8 +16,26 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f9ea89;
+  position: relative;
 }
 
+/* HEADER */
+
+.header {
+  width: 100vw;
+  height: 114px;
+  background-color: #ffd400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 101;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
 .top-bar {
   width: 100%;
   max-width: 100vw;
@@ -93,20 +111,6 @@ body {
 }
 
 /* TOP-NAV */
-
-.header {
-  width: 100vw;
-  height: 114px;
-  background-color: #ffd400;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.header a {
-  text-decoration: none;
-  color: black;
-}
 
 .header__top {
   width: 1200px;
@@ -646,6 +650,11 @@ body {
 }
 
 /* MAIN */
+main {
+  position: relative;
+  z-index: 99;
+}
+
 .look_up_order_info_page {
   width: 1200px;
   height: 1000px;
@@ -716,6 +725,8 @@ footer {
   width: 100vw;
   background-color: white;
   margin-bottom: 0;
+  position: relative;
+  z-index: 100;
 }
 
 .footer--container {
