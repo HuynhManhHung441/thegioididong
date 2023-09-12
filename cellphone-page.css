@@ -657,34 +657,11 @@ main {
   background-color: #ffffff;
   z-index: 99;
 }
-/* SIDEBAR-BANNER */
 
-.left-banner {
-  position: fixed;
-  left: 63px;
-  top: 240px;
-  /* z-index: 200; */
-}
-
-.right-banner {
-  position: fixed;
-  right: 63px;
-  top: 240px;
-}
-
-/* BIGGEST BANNER */
-.big-banner--container-fluid {
-  /* position: relative; */
-  width: 100%;
-  height: 450px;
-  /* z-index: 201; */
-}
-
-.big-banner--container-fluid img {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
+.layout--container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* TOP2 SLIDESHOW */
@@ -870,6 +847,73 @@ main {
   border: 1px solid gray;
   border-radius: 25px;
   color: #333;
+}
+
+/* SELECT FILTER */
+.select-filter {
+  width: 1200px;
+  height: 27px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-filter--checkbox {
+  width: 70%;
+  list-style-type: none;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+
+.select-filter--checkbox li input {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.select-filter--checkbox li:nth-child(1) {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.select-filter--checkbox li:nth-child(2) {
+  width: 136px;
+  height: 27px;
+  padding: 0 5px;
+  background-color: #e1f2e8;
+  border-radius: 5px;
+  color: #219653;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.select-filter--checkbox li:nth-child(n + 3) {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.select-filter--sort {
+  width: 124px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.select-filter--sort i {
+  font-size: 14px;
+  padding-bottom: 7px;
+  vertical-align: middle;
 }
 
 /* CELLPHONE LIST */
@@ -1151,6 +1195,34 @@ main {
   line-height: 16px;
   font-size: 12px;
   color: #288ad6;
+}
+
+/* SEE MORE */
+
+.see-more-cellphone-button {
+  width: 340px;
+  height: 42px;
+  line-height: 42px;
+  margin: 20px auto;
+  font-size: 14px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.see-more-cellphone-button i {
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.see-more-cellphone-button:hover {
+  border: none;
+  color: #fff;
+  background-color: #288ad6;
 }
 
 /* FOOTER */
