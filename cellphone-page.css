@@ -869,8 +869,288 @@ main {
   color: #333;
 }
 
-/* FOOTER */
+/* CELLPHONE LIST */
+.cellphone-list {
+  width: 1200px;
+  height: 100%;
+  margin: 15px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.cellphone-card {
+  padding: 10px 10px 30px 10px;
+  width: 20%;
+  height: 600px;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cellphone-card:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #9a9898;
+}
+
+.cellphone-card__installment {
+  width: 63px;
+  height: 18px;
+  margin-bottom: 20px;
+}
+
+.cellphone-card__installment span {
+  padding: 3px 3px;
+  font-size: 11px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 3px;
+}
+
+.cellphone-card a {
+  text-decoration: none;
+}
+
+.cellphone-card li {
+  list-style-type: none;
+}
+
+.cellphone-card__demo {
+  width: 209px;
+  height: 225px;
+  position: relative;
+  margin-bottom: 5px;
+  transition: 1s;
+}
+
+.cellphone-card__demo:hover {
+  transform: translateY(-10px);
+}
+
+.cellphone-card__demo img:nth-child(1) {
+  width: 209px;
+  height: 209px;
+}
+
+.cellphone-card__demo img:nth-child(2) {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.cellphone-card__discount-type--pink {
+  display: inline-block;
+  padding-right: 10px;
+  height: 20px;
+  line-height: 20px;
+  background: linear-gradient(to right, #e91f63, #db2663);
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__discount-type--pink > img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  object-fit: cover;
+}
+
+.cellphone-card__discount-type--pink span {
+  margin-left: 3px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.cellphone-card__discount-type--red {
+  display: inline-block;
+  padding-right: 10px;
+  height: 20px;
+  line-height: 20px;
+  background: linear-gradient(to right, #ef3006, #c60004);
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__discount-type--red > img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  object-fit: cover;
+}
+
+.cellphone-card__discount-type--red span {
+  margin-left: 3px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.cellphone-card__discount-type--blue {
+  display: inline-block;
+  padding-right: 10px;
+  height: 20px;
+  line-height: 20px;
+  background: linear-gradient(to right, #3bacf0, #1b6dc1);
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+.cellphone-card__discount-type--blue > img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  object-fit: cover;
+}
+
+.cellphone-card__discount-type--blue span {
+  margin-left: 3px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.cellphone-card__name {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__name:hover {
+  color: #288ad6;
+}
+
+.cellphone-card__screen-camera {
+  margin-bottom: 5px;
+}
+
+.cellphone-card__screen-camera span {
+  display: inline-block;
+  padding: 4px;
+  background-color: #eaeaea;
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.cellphone-card__memory {
+  margin-bottom: 5px;
+}
+
+.cellphone-card__memory span {
+  display: inline-block;
+  padding: 4px;
+  background-color: #fffdfd;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.cellphone-card__memory span:hover {
+  color: #288ad6;
+  border: 1px solid #288ad6;
+}
+
+.cellphone-card__online-tag {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__online-tag img {
+  float: left;
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
+
+.cellphone-card__online-tag span {
+  height: 15px;
+  line-height: 15px;
+  font-size: 12px;
+  color: #333;
+  margin-left: 3px;
+}
+
+.cellphone-card__original-price {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__original-price span:first-child {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.cellphone-card__special-price {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__special-price img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  margin-right: 3px;
+}
+
+.cellphone-card__special-price span {
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+.cellphone-card__price {
+  color: #e83a45;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__star-rate {
+  display: flex;
+  /* justify-content; */
+  margin-bottom: 5px;
+}
+
+.cellphone-card__star-rate i {
+  color: darkorange;
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.cellphone-card__star-rate span {
+  color: #9a9898;
+  font-size: 12px;
+}
+
+.cellphone-card__compare {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__compare img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  margin-right: 3px;
+}
+
+.cellphone-card__compare span {
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #288ad6;
+}
+
+/* FOOTER */
 footer {
   width: 100vw;
   background-color: white;
