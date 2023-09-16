@@ -743,7 +743,7 @@ h1 {
 /* CELLPHONE INTRODUCE */
 
 .cellphone-introduce {
-  height: 2000px;
+  /* height: 2000px; */
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
@@ -758,8 +758,7 @@ h1 {
 }
 
 .introduce-slideshow {
-  width: 710px;
-  height: 397px;
+  /* width: 710px; */
   position: relative;
 }
 
@@ -817,11 +816,11 @@ h1 {
   opacity: 1;
 }
 
-.cellphone-introduce--right {
+/* .cellphone-introduce--right {
   width: 460px;
   height: 100%;
   background-color: cyan;
-}
+} */
 
 .introduce-slideshow__banner-list {
   width: 100%;
@@ -840,14 +839,13 @@ h1 {
   z-index: 40;
 }
 
-i.fa-youtube {
+#video-youtube-link {
   color: #c60004;
-  font-size: 50px;
+  font-size: 40px;
   position: absolute;
   top: 50%;
-  left: 45%;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   z-index: 50;
 }
 
@@ -873,6 +871,7 @@ i.fa-youtube {
 
 .introduce-slideshow-symbolic {
   width: 575px;
+  height: 91px;
   display: flex;
   justify-content: space-between;
   margin: 15px auto;
@@ -894,7 +893,7 @@ i.fa-youtube {
 .introduce-slideshow-symbolic img {
   width: 40px;
   height: 40px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .introduce-slideshow-symbolic span {
@@ -902,6 +901,149 @@ i.fa-youtube {
   font-size: 12px;
   margin-top: 5px;
   color: #333;
+}
+
+.product-policy {
+  list-style-type: none;
+  width: 100%;
+  /* height: 300px; */
+  padding: 33px 17px 13px 33px;
+  border: 1px solid #9a9898;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.policy-type {
+  width: 50%;
+  padding: 12px 0;
+  border-bottom: 1px solid #9a9898;
+  display: flex;
+}
+
+.policy-type:nth-child(3) {
+  border-bottom: none;
+}
+
+.policy-type p {
+  font-size: 14px;
+}
+
+.policy-type a {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.product-policy img {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.introduce-old-product {
+  margin-top: 15px;
+  padding: 11px 0px 15px 11px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  display: flex;
+}
+
+.introduce-old-product a img {
+  width: 128px;
+  height: 128px;
+  object-fit: fill;
+}
+
+.old-product__info {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.old-product__info > p:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.old-product__info > a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #2f80ed;
+  margin-bottom: 10px;
+}
+
+.old-product__info > a + p {
+  font-size: 14px;
+}
+
+.old-product__info > p > span:nth-child(1) {
+  color: #d0021c;
+  font-weight: bold;
+}
+
+.old-product__info > p > span:nth-child(2) {
+  padding: 0 10px;
+  font-size: 12px;
+  background-color: #fff0e9;
+  color: #eb5757;
+}
+
+img.iphone14-elements {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.description-product {
+  width: 100%;
+}
+
+.description-product img {
+  width: 100%;
+}
+
+.description-product h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.description-product > h3 > a {
+  color: #155ec1;
+  text-decoration: none;
+}
+
+.description-product > p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.description-product > p > a {
+  color: #155ec1;
+  text-decoration: none;
+}
+
+.description-product img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.description-product__read-more {
+  display: block;
+  width: 50%;
+  margin: 0px auto;
+  font-size: 14px;
+  padding: 10px;
+  color: #3bacf0;
+  border: 1px solid #3bacf0;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.description-product__read-more i {
+  vertical-align: middle;
 }
 
 /* TOP SLIDESHOW BANNERS */
