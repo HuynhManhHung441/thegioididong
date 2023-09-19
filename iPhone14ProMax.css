@@ -1746,22 +1746,25 @@ i.fa-thumbs-up + span {
   margin-left: 10px;
 }
 .promotion-list__item {
-  display: inline-flex;
+  display: inline;
+  margin-top: 10px;
 }
-.promotion-list__item span {
+
+.promotion-list__item > span {
   width: 16px;
   height: 16px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
   color: #fff;
   background-color: #288ad6;
   border-radius: 50%;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .promotion-list__item p {
+  display: inline;
   font-size: 14px;
 }
 
