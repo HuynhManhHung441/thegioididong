@@ -1969,6 +1969,127 @@ p.total-price span {
   border: none;
   cursor: pointer;
 }
+
+.loyal-customer-promotions {
+  height: max-content;
+  padding: 10px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.loyal-customer-promotions__QR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.loyal-customer-promotions__QR img {
+  width: 80%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.loyal-customer-promotions__QR > p {
+  padding: 3px 0;
+  font-size: 11px;
+  text-align: center;
+  color: #666666;
+  font-style: italic;
+}
+
+.loyal-customer-promotions__VIP {
+  width: 40%;
+}
+
+.vip-gift-app {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.loyal-customer-promotions__VIP img {
+  width: 32px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.loyal-customer-promotions__VIP span {
+  font-size: 18px;
+}
+
+.loyal-customer-promotions__VIP > p:nth-child(2) {
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.loyal-customer-promotions__VIP > p:nth-child(3) {
+  padding: 3px 0;
+  font-size: 11px;
+  text-align: center;
+  color: #666666;
+  font-style: italic;
+}
+
+.loyal-customer-promotions__download-app {
+  width: 32%;
+}
+
+.loyal-customer-promotions__download-app img {
+  width: 100%;
+  aspect-ratio: 40/11;
+  margin: 5px 0;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+table.technical-specifications__info {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.technical-specifications > p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.technical-specifications > button {
+  display: block;
+  width: 90%;
+  aspect-ratio: 100/10;
+  margin: 15px auto;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #2f80ed;
+  border-radius: 7px;
+  color: #2f80ed;
+  cursor: pointer;
+}
+
+.technical-specifications > button > i {
+  margin-left: 10px;
+}
+
 /* FOOTER */
 footer {
   width: 100vw;
