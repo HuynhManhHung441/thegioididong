@@ -1847,6 +1847,128 @@ i.fa-thumbs-up + span {
   cursor: pointer;
 }
 
+.buying-together-promotions {
+  width: 100%;
+  padding: 20px 10px;
+  border: 1px solid #9a9898;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.buying-together-promotions > p:first-child {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9a9898;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.buying-together-product-list {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #9a9898;
+}
+
+.buying-together-product {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.buying-together-product__display {
+  width: 110px;
+  height: 100px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.buying-together-product__display img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.buying-together-product__display p {
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f28902;
+  padding: 2px 5px;
+  border-radius: 3px;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+}
+
+.buying-together-product__info input {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.buying-together-product__info label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buying-together-product__info form {
+  margin-bottom: 7px;
+}
+
+.buying-together-product__info p {
+  margin-bottom: 7px;
+}
+
+.buying-together-product__info > p > span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #d0021b;
+}
+
+.buying-together-product__info > p > span:last-child {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #6d6d6d;
+  margin-left: 15px;
+}
+
+.buying-together-product__info a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #288ad6;
+  padding-top: 30px;
+}
+
+p.total-price {
+  display: flex;
+  font-size: 14px;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+p.total-price span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d0021b;
+  margin-left: 10px;
+}
+
+.buying-together-promotions button {
+  width: 100%;
+  aspect-ratio: 11/1;
+  font-size: 16px;
+  color: #fff;
+  background-color: #cecece;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
 /* FOOTER */
 footer {
   width: 100vw;
