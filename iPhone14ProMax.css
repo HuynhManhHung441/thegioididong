@@ -1773,6 +1773,80 @@ i.fa-thumbs-up + span {
   color: #288ad6;
 }
 
+.buy-product-ways {
+  margin-top: 20px;
+}
+
+.buy-product-ways .location {
+  font-size: 14px;
+}
+
+.buy-product-ways a.location {
+  font-size: 14px;
+  text-decoration: none;
+  color: #288ad6;
+}
+
+.buy-product-ways .location i {
+  margin-right: 5px;
+}
+
+.buy-product-ways span {
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+.buy-product-ways button {
+  width: 100%;
+  aspect-ratio: 10/1;
+  background-color: #fb6e2e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.buy-product-ways .payment-ways {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.buy-product-ways .payment-ways a {
+  width: 49%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2f80ed;
+  border-radius: 5px;
+  padding: 6px 0;
+}
+
+.buy-product-ways .payment-ways a > p:first-child {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+}
+
+.buy-product-ways .payment-ways a > p:last-child {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.buy-product-ways p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.buy-product-ways p > span {
+  color: #2f80ed;
+  cursor: pointer;
+}
+
 /* FOOTER */
 footer {
   width: 100vw;
