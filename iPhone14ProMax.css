@@ -18,8 +18,6 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  /* background-color: #f9ea89; */
-  /* position: relative; */
 }
 
 .header {
@@ -652,14 +650,15 @@ body {
 
 /********    MAIN     *****/
 main {
-  margin: 10px 0;
+  margin: 1rem 0;
   position: relative;
   background-color: #ffffff;
   z-index: 99;
 }
 
 .layout--container {
-  width: 1200px;
+  height: max-content;
+  max-width: 80%;
   margin: 0 auto;
   position: relative;
 }
@@ -2088,6 +2087,173 @@ tr:nth-child(odd) {
 
 .technical-specifications > button > i {
   margin-left: 10px;
+}
+
+/* PHỤ KIỆN THƯỜNG MUA CÙNG */
+
+.buying-together-accessories {
+  margin-bottom: 5rem;
+}
+
+.buying-together-accessories__textbox--top {
+  padding: 1rem 0;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.buying-together-accessories__textbox--top span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.buying-together-accessories__textbox--top a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #288ad6;
+}
+
+.buying-together-accessories__sildeshow {
+  position: relative;
+}
+
+.buying-together-accessories__list {
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.buying-together-accessories__card {
+  height: 100%;
+  min-width: 20%;
+  padding: 1rem 1rem;
+  border: 0.5px solid #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.buying-together-accessories__card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.accessories-card__installment {
+  min-height: 1.5rem;
+}
+
+.accessories-card__installment span {
+  font-size: 11px;
+  background-color: #f1f1f1;
+  padding: 3px;
+  color: #333;
+  border-radius: 4px;
+}
+.accessories-card__display {
+  /* flex: 1; */
+  /* width: 100%; */
+  position: relative;
+  margin: 2rem 0 1rem;
+  /* border: 2px solid #333; */
+  /* background-color: #db2663; */
+  transition: 1s;
+}
+
+.accessories-card__display:hover {
+  transform: translateY(-1rem);
+}
+
+.accessories-card__display img:nth-child(1) {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.accessories-card__display img:nth-child(2) {
+  width: 21%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.accessories-card__discount-type--pink,
+.accessories-card__online-tag {
+  padding-right: 5px;
+  display: inline-flex;
+  align-items: center;
+  background: var(--discount-label-pink-background);
+  border-radius: 1rem;
+}
+
+.accessories-card__discount-type--pink img,
+.accessories-card__online-tag img {
+  max-height: 2rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.accessories-card__discount-type--pink span,
+.accessories-card__online-tag span {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.accessories-card__online-tag {
+  background: none;
+}
+
+.accessories-card__online-tag span {
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-transform: lowercase;
+  color: #333;
+}
+
+.accessories-card__original-price span {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #333;
+}
+
+.accessories-card__original-price span:nth-child(2) {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.accessories-card__price {
+  /* line-height: 1.8rem; */
+  font-size: 17px;
+  font-weight: bold;
+  color: #e83a45;
+  margin: 0.5rem 0;
+}
+
+.accessories-card__name {
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+
+.accessories-card__name:hover {
+  color: #288ad6;
+}
+
+.accessories-card__star-rate {
+  font-size: 12px;
+  color: darkorange;
+  margin-right: 5px;
+}
+
+.accessories-card__star-rate span {
+  color: #6d6d6d;
 }
 
 /* FOOTER */
