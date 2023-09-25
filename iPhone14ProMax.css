@@ -30,6 +30,7 @@ body {
   position: relative;
   z-index: 101;
 }
+
 .top-bar {
   width: 100%;
   max-width: 100vw;
