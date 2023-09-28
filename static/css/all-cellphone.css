@@ -322,7 +322,8 @@ header {
   min-height: 320px;
 }
 
-.main-header-accessory__list-up-arrow {
+.main-header-accessory__list-up-arrow,
+.main-header-PC-printer__list-up-arrow {
   width: 100%;
   height: 10px;
   position: relative;
@@ -339,20 +340,25 @@ header {
   transform: rotate(45deg);
 }
 
-.main-header-accessory__list-item {
+.main-header-accessory__list-item,
+.main-header-covenient-service__list-item,
+.main-header-PC-printer__list-item {
   position: absolute;
   z-index: 500;
   width: 100%;
   height: 100%;
   padding: 10px 30px 20px 10px;
   background-color: #f3f3f3;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
-.main-header-accessory__list-item td {
+.main-header-accessory__list-item td,
+.main-header-covenient-service__list-item td {
   padding-right: 30px;
 }
 
+.main-header-accessory__list-item strong,
+.main-header-covenient-service__list-item strong,
 .main-header-accessory__list-item strong {
   font-size: 13px;
   text-transform: uppercase;
@@ -360,10 +366,14 @@ header {
   border-bottom: 0.2px solid rgba(128, 128, 128, 0.1);
 }
 
-.main-header-accessory__list-item a {
+.main-header-accessory__list-item a,
+.main-header-covenient-service__list-item a,
+.main-header-covenient-service__list-item a {
   font-size: 13px;
 }
-.main-header-accessory__list-item a:hover {
+.main-header-accessory__list-item a:hover,
+.main-header-covenient-service__list-item a:hover,
+.main-header-PC-printer__list-item a:hover {
   font-weight: bold;
 }
 
@@ -399,6 +409,80 @@ header {
 .main-header__old-machine i {
   font-size: 20px;
   margin-right: 3px;
+}
+
+.main-header__covenient-service {
+  position: relative;
+  max-width: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header-covenient-service__list {
+  display: none;
+}
+
+.main-header__covenient-service:hover > .main-header-covenient-service__list {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 780px;
+  min-height: 220px;
+}
+
+.main-header-covenient-service__list-up-arrow {
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+
+.main-header-covenient-service__up-arrow {
+  position: absolute;
+  z-index: 499;
+  top: 3px;
+  right: 10%;
+  width: 15px;
+  height: 15px;
+  background-color: #f3f3f3;
+  transform: rotate(45deg);
+}
+
+.main-header__PC-printer {
+  position: relative;
+  max-width: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header-PC-printer__list {
+  display: none;
+}
+
+.main-header__PC-printer:hover > .main-header-PC-printer__list {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -7%;
+  min-width: 180px;
+  min-height: 160px;
+}
+
+.main-header-PC-printer__list-up-arrow {
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+
+.main-header-PC-printer__up-arrow {
+  position: absolute;
+  z-index: 499;
+  top: 3px;
+  left: 15%;
+  width: 15px;
+  height: 15px;
+  background-color: #f3f3f3;
+  transform: rotate(45deg);
 }
 
 @media only screen and (max-width: 991px) {
