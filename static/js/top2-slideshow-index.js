@@ -1,0 +1,1 @@
+const bannerList = document.

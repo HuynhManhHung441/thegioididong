@@ -31,3 +31,5 @@ prev_btn.onclick = function() {
     }
     reloadBanner();
 }
+
+

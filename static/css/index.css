@@ -488,19 +488,19 @@ header {
 
 /* BIGGEST BANNER */
 main {
-  width: 100vw;
+  width: 100%;
 }
 
 .main__top-biggest-banner {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 89vh;
   z-index: 90;
   background-color: aquamarine;
 }
 
 .main__top-biggest-banner--background {
-  width: 100vw;
+  width: 100%;
   height: 67%;
 }
 
@@ -535,6 +535,7 @@ main {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
   /* background-color: aqua; */
 }
 
@@ -544,7 +545,8 @@ main {
   display: inline-flex;
   justify-content: space-between;
   gap: 1%;
-  overflow: hidden;
+
+  transition: all 1s;
 }
 
 .top-banner-slideshow__banners a {
@@ -562,6 +564,48 @@ main {
 
 .top-banner-slideshow__buttons--moved {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2%;
+  width: 104%;
+  height: 50px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-banner-slideshow__prev-btn,
+.top-banner-slideshow__next-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #1b6dc1;
+
+  border-radius: 50%;
+  background: #fbfbfb;
+  opacity: 0.7;
+}
+
+.top-banner-slideshow__prev-sign,
+.top-banner-slideshow__next-sign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 12px;
+  height: 12px;
+}
+
+.top-banner-slideshow__prev-sign {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+}
+
+.top-banner-slideshow__next-sign {
+  border-top: 3px solid grey;
+  border-right: 3px solid grey;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .optional-promotion {
