@@ -546,7 +546,7 @@ main {
   justify-content: space-between;
   gap: 1%;
 
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 .top-banner-slideshow__banners a {
