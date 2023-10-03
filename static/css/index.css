@@ -18,6 +18,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 
 header {
@@ -285,22 +286,11 @@ header {
   text-decoration: none;
   color: #000000;
   font-size: 14px;
-}
-
-.main-header__cellphone {
-  max-width: 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.main-header__old-machine,
-.main-header__covenient-service,
-.main-header__PC-printer {
-  max-width: 15%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 5px;
+  max-width: fit-content;
 }
 
 .main-header__accessory {
@@ -655,6 +645,7 @@ main {
 
   .container {
     width: 100%;
+    height: 100%;
   }
   .banner--on-desktop {
     display: none;
@@ -727,7 +718,8 @@ main {
 
   .main-header__logo {
     width: 10%;
-    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
   }
 
   .main-header__logo a {
@@ -865,8 +857,14 @@ main {
   .main__top-biggest-banner {
     position: relative;
     width: 100%;
-    height: 920px;
+    /* aspect-ratio: 720/2100; */
+    min-height: 1500px;
     z-index: 90;
+  }
+
+  .main__top-biggest-banner--background {
+    width: 100%;
+    height: 100%;
   }
 
   .main__top-biggest-banner a.main__top-biggest-banner--desktop {
@@ -881,13 +879,94 @@ main {
 
   .main__top-biggest-banner a.main__top-biggest-banner--mobile img {
     width: 100%;
+    /* height: 100%; */
+    aspect-ratio: 720/1100;
+    object-fit: cover;
+  }
+
+  .top-banner-slideshow--positioned {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 45%;
+    width: 100%;
+    height: 10%;
+  }
+
+  .top-banner-slideshow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: aqua;
+  }
+
+  .top-banner-slideshow__banners {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    /* gap: 1%; */
+
+    transition: all 1.5s;
+  }
+
+  .top-banner-slideshow__banners a {
+    display: block;
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .top-banner-slideshow__banners a img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .top-banner-slideshow__buttons--moved {
+    display: none;
+  }
+
+  .optional-promotion {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #db2663;
+  }
+
+  .optional-promotion a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    height: 100%;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+  }
+
+  .optional-promotion a img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  .optional-promotion a p {
+    font-size: 22px;
+    color: #222222;
   }
 }
 
 @media only screen and (max-width: 480px) {
   header {
+    width: 100%;
     height: 20vh;
   }
 
