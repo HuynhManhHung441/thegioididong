@@ -31,9 +31,7 @@ header {
 
 .container {
   width: max(80vw, 992px);
-  /* height: 100%; */
   margin: 0 auto;
-  background-color: #3bacf0;
 }
 .top-header__slideshow {
   height: 100%;
@@ -516,9 +514,8 @@ main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 145px;
-  width: max(80vw, 922px);
-  height: 150px;
+  bottom: 20%;
+  height: 26%;
 }
 
 .top-banner-slideshow {
@@ -603,8 +600,7 @@ main {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: max(80vw, 922px);
-  height: 100px;
+  height: 17%;
   display: inline-flex;
   justify-content: space-between;
 }

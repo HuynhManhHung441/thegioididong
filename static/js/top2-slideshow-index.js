@@ -38,14 +38,17 @@ prevBtn.onclick = function () {
 }
 
 setInterval(() => {
-    currentBannerIndex+=2;
-    if (currentBannerIndex <= banners.length - 1 ) {
-        if (currentBannerIndex == banners.length-1 && banners.length % 2 != 0) {
-            currentBannerIndex-=1;
+    if (window.innerWidth >= 922){
+        currentBannerIndex+=2;
+        if (currentBannerIndex <= banners.length - 1 ) {
+            if (currentBannerIndex == banners.length-1 && banners.length % 2 != 0) {
+                currentBannerIndex-=1;
+            }
         }
-    }
-    else {
-        currentBannerIndex = 0;
+        else {
+            currentBannerIndex = 0;
+        }
     }
     showBanner(currentBannerIndex)
 }, 5000)
+
