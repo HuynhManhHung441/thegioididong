@@ -638,11 +638,10 @@ main {
 .flash-sale__timeline {
   width: 100%;
   height: 15%;
-  /* margin-bottom: 28px; */
   position: relative;
 }
 
-.flash-sale__timeline img.timeline-banner-on-latop {
+.flash-sale__timeline img.timeline-banner-on-laptop {
   display: block;
   width: 100%;
   height: 100%;
@@ -654,15 +653,15 @@ main {
 }
 
 .flash-sale__timeline-info {
-  color: #fff;
-  width: 40%;
-  height: 80px;
   position: absolute;
-  top: 20px;
-  left: 50px;
+  bottom: 15%;
+  left: 5%;
+  width: 40%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #fff;
 }
 
 .flash-sale__timeline-info--day {
@@ -672,12 +671,14 @@ main {
   font-size: 26px;
   text-align: center;
   line-height: 32px;
-  height: 32px;
+}
+
+.flash-sale__timeline-info--day br {
+  display: none;
 }
 
 .flash-sale__timeline-info-hour {
   color: #fff;
-  height: 37px;
   font-weight: 400;
   font-size: 20px;
   line-height: 37px;
@@ -691,38 +692,40 @@ main {
   border: 8px solid #18acff;
 }
 
-.flash-sale__timeline #flash-sale-today {
-  width: 20%;
-  height: 30px;
+.flash-sale-today-nextday {
+  position: absolute;
+  right: 7%;
+  bottom: 5%;
+  width: 40%;
+  height: 30%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flash-sale-today-nextday #flash-sale-today,
+.flash-sale-today-nextday #flash-sale-nextday {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  height: 85%;
   line-height: 30px;
-  border-radius: 20px;
+  border-radius: 7px;
+  border: none;
   color: #fff;
-  background-color: #18acff;
-  text-align: center;
   font-weight: bold;
   font-size: 15px;
-  position: absolute;
-  right: 30%;
-  bottom: 10px;
   box-shadow: 1px -1px 0 2px #ffffff;
   cursor: pointer;
 }
 
-.flash-sale__timeline #flash-sale-nextday {
-  width: 20%;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 20px;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
-  position: absolute;
-  right: 5%;
-  bottom: 10px;
+.flash-sale-today-nextday #flash-sale-today {
+  background-color: #18acff;
+}
+
+.flash-sale-today-nextday #flash-sale-nextday {
   background-color: #868686;
-  box-shadow: 1px -1px 0 2px #ffffff;
-  cursor: pointer;
 }
 
 .flash-sale__slideshow {
