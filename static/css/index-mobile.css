@@ -320,4 +320,36 @@
     border-radius: 3px;
     font-size: 10px;
   }
+
+  .flash-sale__slideshow {
+    height: 580px;
+    padding: 10px;
+  }
+
+  .flash-sale__card-list {
+    overflow-x: scroll;
+  }
+
+  .flash-sale__card {
+    min-width: 125px;
+    height: 49%;
+    margin-right: 10px;
+    padding: 1% 1% 2%;
+    border-radius: 7px;
+    position: relative;
+  }
+
+  .flash-sale__card a {
+    align-items: center;
+  }
+
+  .flash-sale-card__display {
+    width: 100%;
+    margin-top: 10%;
+    flex: 3;
+  }
+
+  .flash-sale__slide-buttons {
+    display: none;
+  }
 }
