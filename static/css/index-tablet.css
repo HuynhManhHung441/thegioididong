@@ -399,4 +399,150 @@
     border-radius: 5px;
     font-size: 13px;
   }
+
+  .flash-sale__slideshow {
+    width: 100%;
+    height: 580px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .flash-sale__slideshow--visible {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flash-sale__card-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    overflow-x: scroll;
+  }
+
+  .flash-sale__card {
+    min-width: 235px;
+    height: 49%;
+    margin-right: 10px;
+    padding: 1% 1% 2%;
+    /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+    background-color: #ffffff;
+    border-radius: 7px;
+
+    position: relative;
+  }
+
+  .flash-sale__card a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .flash-sale-card__display {
+    width: 60%;
+    height: fit-content;
+    margin-top: 4%;
+    transition: 1s;
+    background-color: #1b6dc1;
+  }
+
+  .flash-sale-card__display > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: fill;
+  }
+
+  .flash-sale-card__display:hover {
+    transform: translateY(-4%);
+  }
+
+  .flash-sale__product-name {
+    display: block;
+    flex: 1;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    line-height: 16px;
+  }
+
+  .flash-sale__product-name:hover {
+    color: #3bacf0;
+  }
+
+  .flash-sale__price--discounted {
+    font-size: 13px;
+    font-weight: bold;
+    color: #c01313;
+    /* margin-top: 10px; */
+    text-align: center;
+  }
+
+  .flash-sale__price--original {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    gap: unset;
+  }
+
+  .flash-sale__price--original > p {
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #a5a5a5;
+  }
+
+  .flash-sale__price--original > small {
+    font-size: 12px;
+    background-color: #ce0707;
+    padding: 5px 4px;
+    border-radius: 0px 7px 0px 7px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .flash-sale__remaining-amount {
+    width: 100%;
+    height: 17px;
+    margin-top: 5px;
+    position: relative;
+  }
+
+  .flash-sale__remaining-amount > img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 19px;
+    height: 25px;
+  }
+
+  .flash-sale__remaining-amount > p {
+    width: 100%;
+    height: 100%;
+    line-height: 19px;
+    font-size: 11px;
+    background-color: #fcb601;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10%;
+  }
+
+  .flash-sale__slide-buttons {
+    display: none;
+  }
 }
