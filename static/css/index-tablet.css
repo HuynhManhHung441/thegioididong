@@ -478,4 +478,32 @@
   .flash-sale__slide-buttons {
     display: none;
   }
+
+  .featured-category {
+    margin-top: 2rem;
+    height: 32rem;
+    border-radius: 0.5rem;
+  }
+
+  .featured-category h2 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .featured-category--visible {
+    overflow-x: scroll;
+  }
+
+  .featured-category__list {
+    width: 2100px;
+    padding: 2% 1%;
+  }
+
+  .featured-category__list a img {
+    width: 30%;
+  }
+
+  .featured-category__list a h3 {
+    width: 50%;
+  }
 }

@@ -352,4 +352,16 @@
   .flash-sale__slide-buttons {
     display: none;
   }
+
+  .featured-category__list {
+    width: 1000px;
+  }
+
+  .featured-category__list a img {
+    width: 50%;
+  }
+
+  .featured-category__list a h3 {
+    width: 90%;
+  }
 }
