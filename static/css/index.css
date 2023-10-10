@@ -985,3 +985,108 @@ main {
   font-weight: 200;
   line-height: 18px;
 }
+
+.convenient-service {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+}
+
+.convenient-service a {
+  text-decoration: none;
+}
+
+.convenient-service__title {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.convenient-service__title h2 {
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.convenient-service__title a {
+  display: inline-block;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #535050;
+}
+
+.convenient-service__list {
+  width: 100%;
+  margin-top: 1.5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.convenient-service__list li {
+  width: 24%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 0.8rem;
+}
+
+.convenient-service__list li p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+
+.convenient-service__list li:nth-child(1) {
+  background-color: #dceeff;
+}
+
+.convenient-service__list li:nth-child(2) {
+  background-color: #fef5cf;
+}
+
+.convenient-service__list li:nth-child(3) {
+  background-color: #ffefdb;
+}
+
+.convenient-service__list li:nth-child(4) {
+  background-color: #e1fecf;
+}
+
+.convenient-service__list li div {
+  width: 15%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.convenient-service__list li div i {
+  display: block;
+  font-size: 21px;
+}
+.convenient-service__list li:nth-child(1) div {
+  background-color: #a2d5fb;
+}
+.convenient-service__list li:nth-child(2) div {
+  background-color: #f9e5a3;
+}
+.convenient-service__list li:nth-child(3) div {
+  background-color: #f9d0b4;
+}
+.convenient-service__list li:nth-child(4) div {
+  background-color: #c5fba0;
+}
+
+.convenient-service__list li a {
+  width: 80%;
+}
+
+.convenient-service__list li a p:nth-child(2) {
+  margin-top: 1.5rem;
+}

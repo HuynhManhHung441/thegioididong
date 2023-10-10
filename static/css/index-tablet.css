@@ -506,4 +506,55 @@
   .featured-category__list a h3 {
     width: 50%;
   }
+
+  .convenient-service {
+    margin-top: 2rem;
+    border-radius: 1rem;
+  }
+
+  .convenient-service__title h2 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .convenient-service__title a {
+    font-size: 14px;
+    text-transform: initial;
+  }
+
+  .convenient-service__title a span:nth-child(2) {
+    display: none;
+  }
+
+  .convenient-service__title a span:nth-child(3) {
+    font-weight: bold;
+  }
+
+  .convenient-service__list {
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .convenient-service__list li {
+    width: 49%;
+    margin-bottom: 1rem;
+  }
+
+  .convenient-service__list li p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .convenient-service__list li div {
+    width: 14%;
+    aspect-ratio: 1;
+  }
+
+  .convenient-service__list li div i {
+    font-size: 16px;
+  }
+
+  .convenient-service__list li a p:nth-child(2) {
+    margin-top: 1rem;
+  }
 }

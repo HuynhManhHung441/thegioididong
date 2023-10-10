@@ -364,4 +364,47 @@
   .featured-category__list a h3 {
     width: 90%;
   }
+
+  .convenient-service {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .convenient-service__title h2 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .convenient-service__title a {
+    font-size: 14px;
+    text-transform: initial;
+  }
+
+  .convenient-service__list {
+    margin-top: 0.5rem;
+    padding: 0.1rem;
+  }
+
+  .convenient-service__list li p {
+    line-height: 15px;
+  }
+
+  .convenient-service__list li div {
+    width: 20%;
+    aspect-ratio: 1;
+  }
+
+  .convenient-service__list li a {
+    width: 75%;
+  }
+
+  .convenient-service__list li div i {
+    font-size: 10px;
+  }
+
+  .convenient-service__list li a p:nth-child(2) {
+    margin-top: 1rem;
+  }
 }
