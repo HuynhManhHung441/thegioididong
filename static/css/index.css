@@ -39,11 +39,16 @@ header {
   position: relative;
 }
 
+.top-header__slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .slideshow__banner-list {
   height: 100%;
   width: 100%;
   display: flex;
-  overflow: hidden;
 }
 
 .banner--on-mobile {
@@ -58,6 +63,7 @@ header {
 .banner--on-desktop a {
   display: block;
   height: 100%;
+  width: 100%;
 }
 
 .banner--on-desktop img {

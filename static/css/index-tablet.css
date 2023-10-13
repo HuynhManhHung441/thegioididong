@@ -25,13 +25,14 @@
 
   .banner--on-mobile a {
     display: block;
+    width: 100%;
     height: 100%;
   }
 
   .banner--on-mobile img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   .slideshow__buttons--moved {
@@ -273,14 +274,13 @@
     height: 100%;
     display: inline-flex;
     justify-content: space-between;
-    /* gap: 1%; */
-
+    gap: 1%;
     transition: all 1.5s;
   }
 
   .top-banner-slideshow__banners a {
     display: block;
-    min-width: 100%;
+    min-width: 99%;
     height: 100%;
   }
 

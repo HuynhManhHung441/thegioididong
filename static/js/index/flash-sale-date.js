@@ -14,7 +14,7 @@ var nextDaySpan = document.getElementById("flash-sale-nextday");
 nextDaySpan.textContent = "Sắp diễn ra ngày " + nextDayFormatted;
 
 // Set the end date of the countdown
-var endDate = new Date('2023-10-10T23:59:59');
+var endDate = new Date('2023-11-11T23:59:59');
 setInterval(function() {
     // Get the current date and time
     var currentDate = new Date();
