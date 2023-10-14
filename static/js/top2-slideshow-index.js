@@ -65,7 +65,7 @@ setInterval(() => {
     if (window.innerWidth < 992 & window.innerWidth > 480){
         currentBannerIndex+=1;
         console.log(currentBannerIndex, "tablet")
-        showBanner(currentBannerIndex, 1, 0.01)
+        showBanner(currentBannerIndex, 1, 0)
     }
 
     if (window.innerWidth <= 480){
