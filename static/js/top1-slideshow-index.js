@@ -1,65 +1,58 @@
-const bannerList1 = document.querySelector(".top-header__slide .slideshow__banner-list")
-const banners1 = bannerList1.querySelectorAll('.banner--on-desktop a')
-// console.log(banners1.clientWidth)
-// const prevBtn = document.querySelector('.top-banner-slideshow__buttons--moved .top-banner-slideshow__prev-btn')
-// const nextBtn = document.querySelector('.top-banner-slideshow__buttons--moved .top-banner-slideshow__next-btn')
+const bannerListOfTop1Slideshow = document.querySelector(".top-header__slide .slideshow__banner-list")
+const Top1SlideshowBanners = bannerListOfTop1Slideshow.querySelectorAll('.banner--on-desktop a')
+
+const prevBtnOnTop1Slideshow = document.querySelector('.slideshow__buttons--moved .prev-btn')
+const nextBtnOnTop1Slideshow = document.querySelector('.slideshow__buttons--moved .next-btn')
 let currentBannerIndexOnTop1Slideshow = 0;
 
-function showBanner(bannerIndex, widthBannerPerSlide, widthGapPerSlide) {
-    const widthSlide = bannerList1.clientWidth;
-    const widthBanner = widthSlide*widthBannerPerSlide*bannerIndex;
-    const widthGap = widthSlide*widthGapPerSlide*bannerIndex;
-    bannerList1.style.transform = `translateX(-${widthBanner+widthGap}px)`
+function showBannerOnTop1Slideshow(bannerIndex, widthBannerPerSlide, widthGapPerSlide) {
+    const widthSlideOnTop1Slideshow = bannerListOfTop1Slideshow.clientWidth;
+    const widthBannerOnTop1Slideshow = widthSlideOnTop1Slideshow*widthBannerPerSlide*bannerIndex;
+    const widthGapOnTop1Slideshow = widthSlideOnTop1Slideshow*widthGapPerSlide*bannerIndex;
+    bannerListOfTop1Slideshow.style.transform = `translateX(-${widthBannerOnTop1Slideshow+widthGapOnTop1Slideshow}px)`;
 }
-// console.log(banners1.length);
-// nextBtn.onclick = function () {
-//     currentBannerIndex+=2;
-//     if (currentBannerIndex <= banners.length - 1 ) {
-//         if (currentBannerIndex == banners.length-1 && banners.length % 2 != 0) {
-//             currentBannerIndex-=1;
-//         }
-//     }
-//     else {
-//         currentBannerIndex = 0;
-//     }
-//     showBanner(currentBannerIndex)
-// }
 
+nextBtnOnTop1Slideshow.onclick = function () {
+    currentBannerIndexOnTop1Slideshow+=1;
+    if (currentBannerIndexOnTop1Slideshow === Top1SlideshowBanners.length) {
+        currentBannerIndexOnTop1Slideshow = 0;
+    }
+    console.log("Clicked success")
+    showBannerOnTop1Slideshow(currentBannerIndexOnTop1Slideshow, 1, 0)
+}
 
-// prevBtn.onclick = function () {
-//     currentBannerIndex-=2;
-//     if (currentBannerIndex < -1 ) {
-//         currentBannerIndex = banners.length -2;
-//     }
-//     if (currentBannerIndex == -1 && banners.length % 2 != 0){
-//         currentBannerIndex+=1
-//     }
-//     showBanner(currentBannerIndex)
-// }
+prevBtnOnTop1Slideshow.onclick = function () {
+    currentBannerIndexOnTop1Slideshow-=1;
+    if (currentBannerIndexOnTop1Slideshow < 0) {
+        currentBannerIndexOnTop1Slideshow = Top1SlideshowBanners.length -1;
+    }
+    console.log("Clicked success")
+    showBannerOnTop1Slideshow(currentBannerIndexOnTop1Slideshow, 1, 0)
+}
 
 setInterval(() => {
     if (window.innerWidth >= 992){
         currentBannerIndexOnTop1Slideshow+=1;
-        if (currentBannerIndexOnTop1Slideshow===banners1.length){
-            currentBannerIndexOnTop1Slideshow = 0
+        if (currentBannerIndexOnTop1Slideshow === Top1SlideshowBanners.length){
+            currentBannerIndexOnTop1Slideshow = 0;
         }
-        showBanner(currentBannerIndexOnTop1Slideshow, 1, 0)
+        showBannerOnTop1Slideshow(currentBannerIndexOnTop1Slideshow, 1, 0)
     }
 
     if (window.innerWidth < 992 & window.innerWidth > 480){
         currentBannerIndexOnTop1Slideshow+=1;
-        if (currentBannerIndexOnTop1Slideshow===banners1.length){
-            currentBannerIndexOnTop1Slideshow = 0
+        if (currentBannerIndexOnTop1Slideshow === Top1SlideshowBanners.length){
+            currentBannerIndexOnTop1Slideshow = 0;
         }
-        showBanner(currentBannerIndexOnTop1Slideshow, 1, 0)
+        showBannerOnTop1Slideshow(currentBannerIndexOnTop1Slideshow, 1, 0)
     }
 
     if (window.innerWidth <= 480){
         currentBannerIndexOnTop1Slideshow+=1;
-        if (currentBannerIndexOnTop1Slideshow===banners1.length){
+        if (currentBannerIndexOnTop1Slideshow === Top1SlideshowBanners.length){
             currentBannerIndexOnTop1Slideshow = 0
         }
-        showBanner(currentBannerIndexOnTop1Slideshow, 1, 0)
+        showBannerOnTop1Slideshow(currentBannerIndexOnTop1Slideshow, 1, 0)
     }
-}, 3000)
+}, 5000)
 

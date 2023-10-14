@@ -1,77 +1,78 @@
-const bannerList = document.querySelector(".top-banner-slideshow__banners")
-const banners = bannerList.querySelectorAll('a')
-console.log(banners.clientWidth)
+const bannerListOnTop2Slideshow = document.querySelector(".top-banner-slideshow__banners")
+const Top2SlideshowBanners = bannerListOnTop2Slideshow.querySelectorAll('a')
+console.log("top2", Top2SlideshowBanners)
+console.log(Top2SlideshowBanners.clientWidth)
 const prevBtn = document.querySelector('.top-banner-slideshow__buttons--moved .top-banner-slideshow__prev-btn')
 const nextBtn = document.querySelector('.top-banner-slideshow__buttons--moved .top-banner-slideshow__next-btn')
 
-let currentBannerIndex = 0;
+let currentBannerIndexOnTop2Slideshow = 0;
 
 function showBanner(bannerIndex, widthBannerPerSlide, widthGapPerSlide) {
-    const widthSlide = bannerList.clientWidth;
-    console.log(widthSlide)
-    // if (widthSlide % 1 !=0 ) {
-    //     console.log(widthSlide)
-    //     widthSlide +=1;
-    //     widthSlide = Math.floor(widthSlide)
+    const widthSlideOnTop2Slideshow = bannerListOnTop2Slideshow.clientWidth;
+    console.log(widthSlideOnTop2Slideshow)
+    // if (widthSlideOnTop2Slideshow % 1 !=0 ) {
+    //     console.log(widthSlideOnTop2Slideshow)
+    //     widthSlideOnTop2Slideshow +=1;
+    //     widthSlideOnTop2Slideshow = Math.floor(widthSlideOnTop2Slideshow)
     //     console.log("*****")
-    //     console.log(widthSlide)
+    //     console.log(widthSlideOnTop2Slideshow)
     // }
-    const widthBanner = widthSlide*widthBannerPerSlide*bannerIndex;
-    console.log(widthBanner/bannerIndex)
-    const widthGap = widthSlide*widthGapPerSlide*bannerIndex;
-    console.log(widthGap)
-    bannerList.style.transform = `translateX(-${widthBanner+widthGap}px)`
+    const widthBannerOnTop2Slideshow = widthSlideOnTop2Slideshow*widthBannerPerSlide*bannerIndex;
+    console.log(widthBannerOnTop2Slideshow/bannerIndex)
+    const widthGapOnTop2Slideshow = widthSlideOnTop2Slideshow*widthGapPerSlide*bannerIndex;
+    console.log(widthGapOnTop2Slideshow)
+    bannerListOnTop2Slideshow.style.transform = `translateX(-${widthBannerOnTop2Slideshow+widthGapOnTop2Slideshow}px)`
 }
-console.log(banners.length);
-nextBtn.onclick = function () {
-    currentBannerIndex+=2;
-    if (currentBannerIndex <= banners.length - 1 ) {
-        if (currentBannerIndex == banners.length-1 && banners.length % 2 != 0) {
-            currentBannerIndex-=1;
-        }
-    }
-    else {
-        currentBannerIndex = 0;
-    }
-    showBanner(currentBannerIndex)
-}
+// console.log(Top2SlideshowBanners.length);
+// nextBtn.onclick = function () {
+//     currentBannerIndexOnTop2Slideshow+=2;
+//     if (currentBannerIndexOnTop2Slideshow <= Top2SlideshowBanners.length - 1 ) {
+//         if (currentBannerIndexOnTop2Slideshow == Top2SlideshowBanners.length-1 && Top2SlideshowBanners.length % 2 != 0) {
+//             currentBannerIndexOnTop2Slideshow-=1;
+//         }
+//     }
+//     else {
+//         currentBannerIndexOnTop2Slideshow = 0;
+//     }
+//     showBanner(currentBannerIndexOnTop2Slideshow)
+// }
 
 
-prevBtn.onclick = function () {
-    currentBannerIndex-=2;
-    if (currentBannerIndex < -1 ) {
-        currentBannerIndex = banners.length -2;
-    }
-    if (currentBannerIndex == -1 && banners.length % 2 != 0){
-        currentBannerIndex+=1
-    }
-    showBanner(currentBannerIndex)
-}
+// prevBtn.onclick = function () {
+//     currentBannerIndexOnTop2Slideshow-=2;
+//     if (currentBannerIndexOnTop2Slideshow < -1 ) {
+//         currentBannerIndexOnTop2Slideshow = Top2SlideshowBanners.length -2;
+//     }
+//     if (currentBannerIndexOnTop2Slideshow == -1 && Top2SlideshowBanners.length % 2 != 0){
+//         currentBannerIndexOnTop2Slideshow+=1
+//     }
+//     showBanner(currentBannerIndexOnTop2Slideshow)
+// }
 
 setInterval(() => {
     if (window.innerWidth >= 992){
-        currentBannerIndex+=2;
-        if (currentBannerIndex <= banners.length - 1 ) {
-            if (currentBannerIndex == banners.length-1 && banners.length % 2 != 0) {
-                currentBannerIndex-=1;
+        currentBannerIndexOnTop2Slideshow+=2;
+        if (currentBannerIndexOnTop2Slideshow <= Top2SlideshowBanners.length - 1 ) {
+            if (currentBannerIndexOnTop2Slideshow == Top2SlideshowBanners.length-1 && Top2SlideshowBanners.length % 2 != 0) {
+                currentBannerIndexOnTop2Slideshow-=1;
             }
         }
         else {
-            currentBannerIndex = 0;
+            currentBannerIndexOnTop2Slideshow = 0;
         }
-        showBanner(currentBannerIndex, 0.495, 0.01)
+        showBanner(currentBannerIndexOnTop2Slideshow, 0.495, 0.01)
     }
 
     if (window.innerWidth < 992 & window.innerWidth > 480){
-        currentBannerIndex+=1;
-        console.log(currentBannerIndex, "tablet")
-        showBanner(currentBannerIndex, 1, 0)
+        currentBannerIndexOnTop2Slideshow+=1;
+        console.log(currentBannerIndexOnTop2Slideshow, "tablet")
+        showBanner(currentBannerIndexOnTop2Slideshow, 1, 0)
     }
 
     if (window.innerWidth <= 480){
-        currentBannerIndex+=1;
-        console.log(currentBannerIndex, "mobile")
-        showBanner(currentBannerIndex, 1, 0)
+        currentBannerIndexOnTop2Slideshow+=1;
+        console.log(currentBannerIndexOnTop2Slideshow, "mobile")
+        showBanner(currentBannerIndexOnTop2Slideshow, 1, 0)
     }
 }, 5000)
 
