@@ -1201,3 +1201,68 @@ main {
   object-fit: cover;
   border-radius: 1rem;
 }
+
+/* FOOTER */
+footer {
+  margin-top: 3rem;
+  height: 75vh;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer__contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contents .policy {
+  width: 24%;
+}
+.footer__contents .company {
+  width: 20%;
+}
+.footer__contents .contact {
+  width: 24%;
+}
+
+.footer__contents .corporate-promotion {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.business-license {
+  display: flex;
+  height: 30%;
+}
+
+.business-license a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.business-license a img {
+  display: block;
+  height: 100%;
+  width: 20%;
+  object-fit: fill;
+}
+
+.footer__contents .policy,
+.footer__contents .company {
+  list-style-type: none;
+}
+.footer__contents .policy,
+.footer__contents .company,
+.footer__contents .contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copyright {
+  height: 8.5rem;
+  background-color: #f1f1f1;
+}
