@@ -1409,17 +1409,20 @@ footer a {
 .summary-TGDD {
   background-color: #f1f1f1;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: start;
+  padding: 1rem 0;
 }
 
 .summary-TGDD p {
-  margin: 15px 0 15px 0;
+  margin: 5px 0 5px 0;
   height: 54px;
   font-size: 12px;
   line-height: 18px;
   color: #666666;
+}
+
+.summary-TGDD p br:nth-child(1),
+.summary-TGDD p br:nth-child(3) {
+  display: none;
 }
 
 .summary-TGDD p a {
