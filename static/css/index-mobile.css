@@ -484,7 +484,7 @@
   }
 
   .contact span,
-  .information-discount--on-tablet-mobile a,
+  .information-discount--on-tablet-mobile > a,
   .information-discount--on-tablet-mobile p,
   .social-channel,
   .subsidiaries {
@@ -501,7 +501,7 @@
     width: 100%;
   }
 
-  .information-discount--on-tablet-mobile a {
+  .information-discount--on-tablet-mobile > a {
     display: block;
     color: #2f80ed;
     line-height: 2.1rem;
@@ -519,7 +519,35 @@
   .information-discount--on-tablet-mobile p i {
     display: inline-block;
     margin-left: 0.5rem;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .other-information {
+    height: 38.5rem;
+    width: 100%;
+  }
+
+  .other-information ul {
+    height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 1rem 2rem;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+  }
+
+  /* .other-information ul li {
+    width: 50%;
+  } */
+
+  .other-information ul li a {
+    display: block;
+    max-width: 175px;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    padding: 3px 0;
+    color: #000;
   }
 
   .footer__contents .corporate-promotion {
@@ -535,23 +563,23 @@
     background-color: white;
     display: flex;
     font-size: 1.4rem;
-    justify-content: start;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 0.5rem;
   }
 
   .social-channel a {
     width: fit-content;
     height: 100%;
     display: inline-flex;
-    /* justify-content: center; */
+    /* justify-content: space-between; */
     color: #2f80ed;
     align-items: center;
     gap: 0.3rem;
   }
 
   .social-channel a > i {
-    font-size: 1.6rem;
-    margin-right: 4px;
+    font-size: 1.4rem;
+    margin-right: 2px;
   }
 
   .social-channel a i.bxl-youtube {
@@ -560,8 +588,8 @@
 
   .social-channel img {
     margin-right: 2px;
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     object-fit: cover;
   }
 

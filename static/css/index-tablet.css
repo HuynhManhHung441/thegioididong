@@ -680,7 +680,7 @@
   }
 
   .contact span,
-  .information-discount--on-tablet-mobile a,
+  .information-discount--on-tablet-mobile > a,
   .information-discount--on-tablet-mobile p,
   .social-channel,
   .subsidiaries {
@@ -697,7 +697,7 @@
     width: 100%;
   }
 
-  .information-discount--on-tablet-mobile a {
+  .information-discount--on-tablet-mobile > a {
     display: block;
     color: #2f80ed;
     line-height: 2.1rem;
@@ -716,6 +716,34 @@
     display: inline-block;
     margin-left: 0.5rem;
     padding-bottom: 0.4rem;
+  }
+
+  .other-information {
+    height: 38.5rem;
+    width: 100%;
+  }
+
+  .other-information ul {
+    height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 1rem 2rem;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+  }
+
+  /* .other-information ul li {
+    padding: 0;
+    margin: 0;
+  } */
+
+  .other-information ul li a {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    padding: 5px 0;
+    color: #000;
   }
 
   .footer__contents .corporate-promotion {
