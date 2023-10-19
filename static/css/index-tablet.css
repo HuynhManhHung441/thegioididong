@@ -681,7 +681,7 @@
 
   .contact span,
   .information-discount--on-tablet-mobile > a,
-  .information-discount--on-tablet-mobile p,
+  .other-information p,
   .social-channel,
   .subsidiaries {
     border-bottom: 1px solid #e4e4e4;
@@ -719,11 +719,25 @@
   }
 
   .other-information {
-    height: 32rem;
+    height: max-content;
     width: 100%;
   }
 
   .other-information ul {
+    display: none;
+  }
+
+  .other-information.active {
+    height: 37rem;
+    width: 100%;
+  }
+
+  .other-information.active p {
+    border-bottom: none;
+    padding: 1rem 0;
+  }
+
+  .other-information.active ul {
     height: 90%;
     display: flex;
     flex-flow: column wrap;
@@ -733,10 +747,12 @@
     border-radius: 5px;
   }
 
-  /* .other-information ul li {
-    padding: 0;
-    margin: 0;
-  } */
+  .other-information ul li {
+    /* padding: 0; */
+    width: 44.5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .other-information ul li a {
     display: block;
