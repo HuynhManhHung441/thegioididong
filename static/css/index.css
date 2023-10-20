@@ -1214,7 +1214,8 @@ footer a {
 }
 
 .footer__contents {
-  height: 85%;
+  /* height: 85%; */
+  height: max-content;
   padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
@@ -1274,8 +1275,21 @@ footer a {
 }
 
 .footer__contents .policy a:hover,
+.footer__contents .policy p:hover,
 .footer__contents .company a:hover {
   color: #2f80ed;
+}
+
+/* .footer__contents .policy > p ~ .footer__contents .policy > a {
+  display: none;
+} */
+
+.footer__contents .policy > a:nth-child(n + 5) {
+  display: none;
+}
+
+.footer__contents .policy.active a {
+  display: block;
 }
 
 .footer__copyright {
