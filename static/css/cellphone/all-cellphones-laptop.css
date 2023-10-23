@@ -1,0 +1,584 @@
+/********    MAIN     *****/
+main {
+  position: relative;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+/* TOP SLIDESHOW BANNERS */
+.promotion {
+  height: 200px;
+  margin: 1.5rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promotion__slideshow {
+  width: 66%;
+  height: 100%;
+  position: relative;
+}
+
+.promotion-slideshow__buttons {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+.promotion__slideshow:hover > .promotion-slideshow__buttons {
+  opacity: 1;
+}
+
+#promotion-slideshow__prev-btn {
+  background-color: #f1f1f1;
+  width: 30px;
+  height: 60px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#promotion-slideshow__prev-sign {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 3px solid gray;
+  border-right: 3px solid gray;
+  transform: rotate(45deg);
+  top: 19px;
+  left: -5px;
+}
+
+#promotion-slideshow__next-btn {
+  background-color: #f1f1f1;
+  width: 30px;
+  height: 60px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#promotion-slideshow__next-sign {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
+  transform: rotate(-45deg);
+  top: 19px;
+  right: -5px;
+}
+
+.promotion-slideshow__banner-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.promotion-slideshow__banner-list a {
+  display: block;
+  min-width: 100%;
+  height: 100%;
+}
+
+.promotion-slideshow__banner-list img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promotion__fixed-banner {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.promotion__fixed-banner a {
+  display: block;
+  width: 100%;
+  height: 48%;
+  object-fit: cover;
+}
+
+.promotion__fixed-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FILTER */
+.general-filter {
+  /* width: 1200px; */
+  height: 35px;
+  font-size: 14px;
+  margin: 15px auto 0 auto;
+  display: flex;
+}
+
+.general-filter > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.general-filter li {
+  margin-right: 10px;
+  height: 100%;
+  padding: 0 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.general-filter li i {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.general-filter li i.fa-filter {
+  margin-right: 5px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.brand-filter {
+  /* width: 1200px; */
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand-filter li {
+  width: 119px;
+  height: 36px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 8px 13.5px;
+}
+
+.brand-filter img {
+  width: 92px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.needs-filter {
+  /* width: 1200px; */
+  margin: 15px auto 0 auto;
+  font-size: 15px;
+}
+
+.needs-filter p {
+  margin-bottom: 10px;
+}
+
+.needs-filter ul {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+}
+
+.needs-filter ul a {
+  text-decoration: none;
+}
+
+.needs-filter ul li {
+  height: 36px;
+  padding: 0 10px;
+  line-height: 36px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  color: #333;
+}
+
+/* SELECT FILTER */
+.select-filter {
+  /* width: 1200px; */
+  height: 27px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-filter--checkbox {
+  width: 70%;
+  list-style-type: none;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+
+.select-filter--checkbox li input {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.select-filter--checkbox li:nth-child(1) {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.select-filter--checkbox li:nth-child(2) {
+  width: 136px;
+  height: 27px;
+  padding: 0 5px;
+  background-color: #e1f2e8;
+  border-radius: 5px;
+  color: #219653;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.select-filter--checkbox li:nth-child(n + 3) {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.select-filter--sort {
+  width: 124px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.select-filter--sort i {
+  font-size: 14px;
+  padding-bottom: 7px;
+  vertical-align: middle;
+}
+
+/* CELLPHONE LIST */
+.cellphone-list {
+  /* width: 1200px; */
+  height: 100%;
+  margin: 15px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cellphone-card {
+  padding: 10px 10px 30px 10px;
+  width: 20%;
+  height: 600px;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cellphone-card:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #9a9898;
+}
+
+.cellphone-card__installment {
+  width: 63px;
+  height: 18px;
+  margin-bottom: 20px;
+}
+
+.cellphone-card__installment span {
+  padding: 3px 3px;
+  font-size: 11px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 3px;
+}
+
+.cellphone-card a {
+  text-decoration: none;
+}
+
+.cellphone-card li {
+  list-style-type: none;
+}
+
+.cellphone-card__demo {
+  width: 209px;
+  height: 225px;
+  position: relative;
+  margin-bottom: 5px;
+  transition: 1s;
+}
+
+.cellphone-card__demo:hover {
+  transform: translateY(-10px);
+}
+
+.cellphone-card__demo img:nth-child(1) {
+  width: 209px;
+  height: 209px;
+}
+
+.cellphone-card__demo img:nth-child(2) {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.cellphone-card__discount-type--pink {
+  display: inline-block;
+  padding-right: 10px;
+  height: 20px;
+  line-height: 20px;
+  background: linear-gradient(to right, #e91f63, #db2663);
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__discount-type--pink > img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  object-fit: cover;
+}
+
+.cellphone-card__discount-type--pink span {
+  margin-left: 3px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.cellphone-card__discount-type--red {
+  display: inline-block;
+  padding-right: 10px;
+  height: 20px;
+  line-height: 20px;
+  background: linear-gradient(to right, #ef3006, #c60004);
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__discount-type--red > img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  object-fit: cover;
+}
+
+.cellphone-card__discount-type--red span {
+  margin-left: 3px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.cellphone-card__discount-type--blue {
+  display: inline-block;
+  padding-right: 10px;
+  height: 20px;
+  line-height: 20px;
+  background: linear-gradient(to right, #3bacf0, #1b6dc1);
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+.cellphone-card__discount-type--blue > img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  object-fit: cover;
+}
+
+.cellphone-card__discount-type--blue span {
+  margin-left: 3px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.cellphone-card__name {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__name:hover {
+  color: #288ad6;
+}
+
+.cellphone-card__screen-camera {
+  margin-bottom: 5px;
+}
+
+.cellphone-card__screen-camera span {
+  display: inline-block;
+  padding: 4px;
+  background-color: #eaeaea;
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.cellphone-card__memory {
+  margin-bottom: 5px;
+}
+
+.cellphone-card__memory span {
+  display: inline-block;
+  padding: 4px;
+  background-color: #fffdfd;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.cellphone-card__memory span:hover {
+  color: #288ad6;
+  border: 1px solid #288ad6;
+}
+
+.cellphone-card__online-tag {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__online-tag img {
+  float: left;
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
+
+.cellphone-card__online-tag span {
+  height: 15px;
+  line-height: 15px;
+  font-size: 12px;
+  color: #333;
+  margin-left: 3px;
+}
+
+.cellphone-card__original-price {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__original-price span:first-child {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.cellphone-card__special-price {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__special-price img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  margin-right: 3px;
+}
+
+.cellphone-card__special-price span {
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+.cellphone-card__price {
+  color: #e83a45;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__star-rate {
+  display: flex;
+  /* justify-content; */
+  margin-bottom: 5px;
+}
+
+.cellphone-card__star-rate i {
+  color: darkorange;
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.cellphone-card__star-rate span {
+  color: #9a9898;
+  font-size: 12px;
+}
+
+.cellphone-card__compare {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.cellphone-card__compare img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  margin-right: 3px;
+}
+
+.cellphone-card__compare span {
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #288ad6;
+}
+
+/* SEE MORE */
+
+.see-more-cellphone-button {
+  width: 340px;
+  height: 42px;
+  line-height: 42px;
+  margin: 20px auto;
+  font-size: 14px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.see-more-cellphone-button i {
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.see-more-cellphone-button:hover {
+  border: none;
+  color: #fff;
+  background-color: #288ad6;
+}

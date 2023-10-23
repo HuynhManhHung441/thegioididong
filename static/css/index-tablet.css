@@ -727,17 +727,17 @@
     display: none;
   }
 
-  .other-information.active {
+  .other-information:has(ul.active) {
     height: 37rem;
     width: 100%;
   }
 
-  .other-information.active p {
+  .other-information p {
     border-bottom: none;
     padding: 1rem 0;
   }
 
-  .other-information.active ul {
+  .other-information ul.active {
     height: 90%;
     display: flex;
     flex-flow: column wrap;
