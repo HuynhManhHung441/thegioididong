@@ -1,11 +1,12 @@
 @media only screen and (max-width: 991px) {
   /********    MAIN     *****/
   main {
+    width: 90%;
+    margin: 0 auto;
     position: relative;
     background-color: #ffffff;
     z-index: 99;
   }
-
   /* TOP SLIDESHOW BANNERS */
   .promotion {
     height: 200px;
@@ -21,56 +22,27 @@
   }
 
   .promotion-slideshow__buttons {
-    width: 100%;
-    height: 60px;
-    display: flex;
+    display: none;
+  }
+
+  .slide-index-signs {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    display: inline-flex;
     justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.6;
+    align-items: center;
+    width: 30%;
+    height: 3%;
   }
 
-  .promotion__slideshow:hover > .promotion-slideshow__buttons {
-    opacity: 1;
-  }
-
-  #promotion-slideshow__prev-btn {
-    background-color: #f1f1f1;
-    width: 30px;
-    height: 60px;
-    position: relative;
-    border-radius: 5px;
-  }
-
-  #promotion-slideshow__prev-sign {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-top: 3px solid gray;
-    border-right: 3px solid gray;
-    transform: rotate(45deg);
-    top: 19px;
-    left: -5px;
-  }
-
-  #promotion-slideshow__next-btn {
-    background-color: #f1f1f1;
-    width: 30px;
-    height: 60px;
-    position: relative;
-    border-radius: 5px;
-  }
-
-  #promotion-slideshow__next-sign {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-top: 3px solid gray;
-    border-left: 3px solid gray;
-    transform: rotate(-45deg);
-    top: 19px;
-    right: -5px;
+  .slide-index-signs span {
+    display: block;
+    width: 8%;
+    height: 100%;
+    background-color: cadetblue;
+    border-radius: 2px;
   }
 
   .promotion-slideshow__banner-list {
