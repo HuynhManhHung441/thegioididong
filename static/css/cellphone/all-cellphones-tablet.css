@@ -45,6 +45,15 @@
     border-radius: 2px;
   }
 
+  .general-filter {
+    font-size: 1.2rem;
+    overflow-x: scroll;
+  }
+
+  .general-filter li {
+    width: max-content;
+  }
+
   .promotion-slideshow__banner-list {
     width: 100%;
     height: 100%;
@@ -112,11 +121,12 @@
     margin: 15px auto 0 auto;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 8px;
     row-gap: 10px;
     align-items: center;
     justify-content: flex-start;
+    overflow-x: scroll;
   }
 
   .brand-filter li {
@@ -146,6 +156,7 @@
   .needs-filter ul {
     list-style-type: none;
     display: flex;
+    overflow-x: scroll;
     gap: 8px;
   }
 
@@ -154,6 +165,7 @@
   }
 
   .needs-filter ul li {
+    width: max-content;
     height: 36px;
     padding: 0 10px;
     line-height: 36px;
@@ -165,23 +177,40 @@
   /* SELECT FILTER */
   .select-filter {
     /* width: 1200px; */
-    height: 27px;
+    height: 54px;
     margin: 10px auto;
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     justify-content: space-between;
     align-items: center;
   }
 
   .select-filter--checkbox {
-    width: 70%;
+    width: 100%;
     list-style-type: none;
     display: flex;
     font-size: 12px;
     align-items: center;
+    justify-content: start;
+    /* overflow-x: scroll; */
+  }
+
+  .select-filter--checkbox li {
+    width: max-content;
+  }
+
+  .select-filter--checkbox li:nth-child(1) {
+    display: none;
+  }
+
+  .select-filter--checkbox li label {
+    display: block;
+    width: max-content;
   }
 
   .select-filter--checkbox li input {
-    width: 16px;
+    width: fit-content;
     height: 16px;
     margin-right: 5px;
   }
@@ -192,7 +221,8 @@
   }
 
   .select-filter--checkbox li:nth-child(2) {
-    width: 136px;
+    /* width: 136px; */
+    width: fit-content;
     height: 27px;
     padding: 0 5px;
     background-color: #e1f2e8;
@@ -202,7 +232,7 @@
     font-size: 14px;
     text-transform: uppercase;
     font-style: italic;
-    margin-left: 30px;
+    margin-left: 0px;
     display: flex;
     align-items: center;
   }
@@ -211,6 +241,19 @@
     margin-left: 30px;
     display: flex;
     align-items: center;
+  }
+
+  .select-filter__sort--mobile {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #219653; */
+  }
+  .select-filter__sort--mobile label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .select-filter--sort {
@@ -240,7 +283,7 @@
 
   .cellphone-card {
     padding: 10px 10px 30px 10px;
-    width: 20%;
+    width: 50%;
     height: 600px;
     border: 1px solid #d3d3d3;
     display: flex;

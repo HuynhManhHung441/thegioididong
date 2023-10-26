@@ -258,6 +258,10 @@ main {
   align-items: center;
 }
 
+.select-filter__sort--mobile label {
+  display: none;
+}
+
 .select-filter--sort {
   width: 124px;
   height: 26px;
