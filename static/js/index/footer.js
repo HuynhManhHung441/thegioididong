@@ -18,7 +18,7 @@ sortDownIconPolicy.addEventListener('click', () => {
 // });
 
 
-const otherInformationElement = document.querySelector('.other-information ul');
+const otherInformationElement = document.querySelector('.other-information');
 const sortDownIconElement = document.querySelector(".other-information p");
 console.log(otherInformationElement)
 console.log(sortDownIconElement)
