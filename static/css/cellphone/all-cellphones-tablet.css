@@ -127,8 +127,12 @@
     margin-bottom: 0;
   }
 
+  .brand-filter-position {
+    overflow-x: scroll;
+  }
+
   .brand-filter {
-    margin: 15px auto 0 auto;
+    margin: 1.5rem auto 1rem auto;
     list-style-type: none;
     display: flex;
     flex-wrap: nowrap;
@@ -136,9 +140,6 @@
     row-gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    /* overflow-x: scroll; */
-    overflow: auto;
-    white-space: nowrap;
   }
 
   .brand-filter li {
@@ -161,17 +162,19 @@
     font-size: 15px;
   }
 
+  .needs-filter__list {
+    overflow-x: scroll;
+  }
+
   .needs-filter p {
     margin-bottom: 10px;
   }
 
-  .needs-filter ul {
+  .needs-filter__list ul {
+    margin-bottom: 1rem;
     list-style-type: none;
     display: flex;
-    overflow-x: scroll;
     gap: 8px;
-    overflow: auto;
-    white-space: nowrap;
   }
 
   .needs-filter ul a {

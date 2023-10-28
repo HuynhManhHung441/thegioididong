@@ -108,18 +108,18 @@
     display: none;
   }
 
-  .other-information:has(ul.active) {
+  /* .other-information:has(ul.active) {
     height: 37rem;
     width: 100%;
-  }
+  } */
 
   .other-information p {
     border-bottom: none;
     padding: 1rem 0;
   }
 
-  .other-information ul.active {
-    height: 90%;
+  .other-information.active ul {
+    height: 35rem;
     display: flex;
     flex-flow: column wrap;
     margin: 0;
@@ -128,7 +128,7 @@
     border-radius: 5px;
   }
 
-  .other-information ul li {
+  .other-information.active ul li {
     /* padding: 0; */
     width: 44.5%;
     margin-left: auto;
