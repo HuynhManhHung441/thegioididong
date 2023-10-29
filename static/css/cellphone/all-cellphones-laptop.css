@@ -129,64 +129,39 @@ main {
 .cellphone-filters--general {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
-.cellphone-filters--general button {
-  height: 3.5rem;
-  border: 1px solid #333;
-  border-radius: 0.5rem;
-  background-color: #fff;
-
-  padding: 0 1rem;
-}
-
-.cellphone-filters__criteria-list {
-  display: flex;
-  flex: 1;
   justify-content: start;
   align-items: center;
   gap: 1rem;
 }
-.general-filter {
-  height: 35px;
-  font-size: 14px;
-  margin: 15px auto 0 auto;
-  display: flex;
-}
 
-.general-filter > a {
-  text-decoration: none;
-  color: #333;
-}
-
-.general-filter li {
-  margin-right: 10px;
-  height: 100%;
-  padding: 0 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
+.cellphone-filters__criteria-list {
   display: flex;
+  /* flex: 1; */
+  justify-content: start;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
-.general-filter li i {
-  margin-bottom: 5px;
-  margin-left: 5px;
-  font-size: 15px;
+.criteria--dropdown {
+  height: fit-content;
 }
 
-.general-filter li i.fa-filter {
-  margin-right: 5px;
-  margin-left: 0;
-  margin-bottom: 0;
+.cellphone-filters--general button {
+  display: inline-block;
+  width: fit-content;
+  height: 3.5rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0 1rem;
 }
 
-.brand-filter {
-  list-style-type: none;
+.cellphone-filters--brands {
+  width: 100%;
+}
+
+.cellphone-brand-list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -195,15 +170,17 @@ main {
   justify-content: flex-start;
 }
 
-.brand-filter li {
-  width: 119px;
-  height: 36px;
+.cellphone-brand-list a {
+  display: block;
+  width: fit-content;
+  height: fit-content;
   border: 1px solid gray;
   border-radius: 25px;
   padding: 8px 13.5px;
 }
 
-.brand-filter img {
+.cellphone-brand-list img {
+  display: block;
   width: 92px;
   height: 20px;
   object-fit: cover;
@@ -245,7 +222,6 @@ main {
 
 /* SELECT FILTER */
 .select-filter {
-  /* width: 1200px; */
   height: 27px;
   margin: 10px auto;
   display: flex;

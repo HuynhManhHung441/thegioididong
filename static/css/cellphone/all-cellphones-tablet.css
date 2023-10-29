@@ -127,7 +127,15 @@
     margin-bottom: 0;
   }
 
-  .brand-filter-position {
+  .bottom-scroll {
+    overflow-x: scroll;
+  }
+
+  .cellphone-brand-list {
+    margin-bottom: 1rem;
+  }
+
+  .cellphone-filters__criteria-list {
     overflow-x: scroll;
   }
 
