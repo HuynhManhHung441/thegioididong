@@ -45,26 +45,6 @@
     border-radius: 2px;
   }
 
-  .general-filter {
-    font-size: 1.2rem;
-    overflow-x: scroll;
-  }
-
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .general-filter::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .general-filter {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .general-filter li {
-    width: max-content;
-  }
-
   .promotion-slideshow__banner-list {
     width: 100%;
     height: 100%;
@@ -91,40 +71,74 @@
   }
 
   /* FILTER */
-  .general-filter {
-    /* width: 1200px; */
-    height: 35px;
-    font-size: 14px;
-    margin: 15px auto 0 auto;
-    display: flex;
+
+  .cellphone-filters--general .total-filter > button > span:nth-child(2) {
+    display: none;
   }
 
-  .general-filter > a {
-    text-decoration: none;
-    color: #333;
+  .total-filter button span:nth-child(3) {
+    text-transform: capitalize;
   }
 
-  .general-filter li {
-    margin-right: 10px;
-    height: 100%;
-    padding: 0 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
+  .cellphone-filters {
+    padding: 1rem 0;
     display: flex;
-    align-items: center;
+    flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
   }
 
-  .general-filter li i {
-    margin-bottom: 5px;
-    margin-left: 5px;
-    font-size: 15px;
+  .cellphone-filters--general {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
   }
 
-  .general-filter li i.fa-filter {
-    margin-right: 5px;
-    margin-left: 0;
-    margin-bottom: 0;
+  .cellphone-filters__criteria-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: scroll;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .cellphone-filters__criteria-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .cellphone-filters__criteria-list {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .criteria--dropdown {
+    height: fit-content;
+  }
+
+  .cellphone-filters--general button {
+    width: max-content;
+    height: 3.5rem;
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+  }
+
+  .cellphone-filters__criteria-list i {
+    font-size: 1.4rem;
+    padding-bottom: 0.8rem;
+    vertical-align: middle;
+  }
+
+  .cellphone-filters--brands {
+    width: 100%;
   }
 
   .bottom-scroll {
@@ -132,122 +146,103 @@
   }
 
   .cellphone-brand-list {
-    margin-bottom: 1rem;
-  }
-
-  .cellphone-filters__criteria-list {
-    overflow-x: scroll;
-  }
-
-  .brand-filter {
-    margin: 1.5rem auto 1rem auto;
-    list-style-type: none;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    gap: 8px;
-    row-gap: 10px;
+    gap: 1rem;
+    row-gap: 1rem;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 0.8rem;
   }
 
-  .brand-filter li {
-    width: 119px;
-    height: 36px;
+  .cellphone-brand-list a {
+    display: block;
+    width: fit-content;
+    height: 3.5rem;
     border: 1px solid gray;
-    border-radius: 25px;
-    padding: 8px 13.5px;
+    border-radius: 2.5rem;
+    padding: 0.8rem 1.35rem;
   }
 
-  .brand-filter img {
-    width: 92px;
-    height: 20px;
+  .cellphone-brand-list img {
+    display: block;
+    width: 9.2rem;
+    height: 2rem;
     object-fit: cover;
   }
 
-  .needs-filter {
-    /* width: 1200px; */
-    margin: 15px auto 0 auto;
-    font-size: 15px;
+  .cellphone-filters--needs {
+    width: 100%;
+  }
+  .cellphone-filters--needs p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
-  .needs-filter__list {
+  .needs-filter__bottom-scroll {
     overflow-x: scroll;
   }
 
-  .needs-filter p {
-    margin-bottom: 10px;
-  }
-
-  .needs-filter__list ul {
-    margin-bottom: 1rem;
-    list-style-type: none;
+  .needs-filter__list {
     display: flex;
-    gap: 8px;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    list-style-type: none;
   }
 
-  .needs-filter ul a {
-    text-decoration: none;
-  }
-
-  .needs-filter ul li {
-    width: max-content;
-    height: 36px;
-    padding: 0 10px;
-    line-height: 36px;
+  .needs-filter__list li {
+    width: 100%;
+    padding: 0 1rem;
+    line-height: 3.5rem;
     border: 1px solid gray;
-    border-radius: 25px;
+    border-radius: 2.5rem;
+  }
+
+  .needs-filter__list li a {
+    display: block;
+    width: max-content;
+    height: 3.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
     color: #333;
   }
 
-  /* SELECT FILTER */
-  .select-filter {
-    /* width: 1200px; */
-    height: 54px;
-    margin: 10px auto;
+  .cellphone-filters--extended {
+    width: 100%;
+    position: static;
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-flow: column nowrap;
+    gap: 1rem;
+  }
+
+  .select-filters--checkbox {
+    position: static;
+    width: 100%;
+    height: 2.7rem;
+    left: 12%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .select-filter--checkbox {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
     font-size: 12px;
-    align-items: center;
-    justify-content: start;
-    /* overflow-x: scroll; */
   }
 
-  .select-filter--checkbox li {
+  .select-filters--checkbox span {
     width: max-content;
   }
 
-  .select-filter--checkbox li:nth-child(1) {
-    display: none;
+  .select-filters--checkbox span input {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.5rem;
   }
 
-  .select-filter--checkbox li label {
-    display: block;
+  .select-filters--checkbox span label {
     width: max-content;
   }
 
-  .select-filter--checkbox li input {
-    width: fit-content;
-    height: 16px;
-    margin-right: 5px;
-  }
-
-  .select-filter--checkbox li:nth-child(1) {
-    font-weight: bold;
-    font-size: 14px;
-  }
-
-  .select-filter--checkbox li:nth-child(2) {
-    /* width: 136px; */
-    width: fit-content;
+  .select-filters--checkbox span:nth-child(1) {
+    width: 136px;
     height: 27px;
     padding: 0 5px;
     background-color: #e1f2e8;
@@ -257,43 +252,42 @@
     font-size: 14px;
     text-transform: uppercase;
     font-style: italic;
-    margin-left: 0px;
     display: flex;
     align-items: center;
   }
 
-  .select-filter--checkbox li:nth-child(n + 3) {
+  .select-filters--checkbox span:nth-child(n + 2) {
     margin-left: 30px;
     display: flex;
     align-items: center;
   }
 
-  .select-filter__sort--mobile {
+  .select-filter__arrange {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #219653; */
   }
-  .select-filter__sort--mobile label {
-    display: inline-block;
-    font-size: 14px;
+
+  .select-filter__arrange label {
+    font-size: 1.4rem;
     font-weight: bold;
   }
 
-  .select-filter--sort {
-    width: 124px;
-    height: 26px;
-    line-height: 26px;
+  .arrange-box--sorted-by {
+    width: max-content;
+    padding: 0 1rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
     border: 1px solid gray;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 1.2rem;
     text-align: center;
   }
 
-  .select-filter--sort i {
-    font-size: 14px;
-    padding-bottom: 7px;
+  .select-filter__arrange i {
+    font-size: 1.4rem;
+    padding-bottom: 0.8rem;
     vertical-align: middle;
   }
 
