@@ -22,6 +22,7 @@
     <script src="../../js/top1-slideshow-index.js" defer></script>
     <!-- <script src="../../js/top1-slideshow-index.js" defer></script> -->
     <script src="../../js/total-filter-modal.js" defer></script>
+    <script src="../../js/price-range-slider.js" defer></script>
     <script src="../../js/index/footer.js" defer></script>
 </head>
 
@@ -568,7 +569,75 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="total-filter-modal__content-row2"></div>
+                            <div class="total-filter-modal__content-row2">
+                                <div class="total-filter-modal__prices">
+                                    <label for="">Giá</label>
+                                    <div class="price-btn-list">
+                                        <button>Dưới 2 triệu</button>
+                                        <button>Từ 2 - 4 triệu</button>
+                                        <button>Từ 4 - 7 triệu</button>
+                                        <button>Từ 7 - 13 triệu</button>
+                                        <button>Từ 13 - 20 triệu</button>
+                                        <button>Trên 20 triệu</button>
+                                    </div>
+                                    <div class="price-range-slider">
+                                        <div class="price-range-accordion">
+                                            <p>
+                                                <img src="../../images/cellphone-page/iconcate-range.PNG" alt="Icon">
+                                                <span>Hoặc chọn mức giá phù hợp với bạn</span>
+                                                <i class="fa-solid fa-sort-down"></i>
+                                            </p>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="price-input">
+                                              <div class="field">
+                                                <span>Min</span>
+                                                <input type="number" class="input-min" value="2500">
+                                              </div>
+                                              <div class="separator">-</div>
+                                              <div class="field">
+                                                <span>Max</span>
+                                                <input type="number" class="input-max" value="7500">
+                                              </div>
+                                            </div>
+                                            <div class="slider">
+                                              <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input">
+                                              <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                              <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total-filter-modal__cellphone-types">
+                                    <label for="">Loại điện thoại</label>
+                                    <div class="cellphone-type-btn-list">
+                                        <button>
+                                            <img src="https://cdn.tgdd.vn/ValueIcons/android.jpg" alt="">
+                                            <p>Android</p>
+                                        </button>
+                                        <button>
+                                            <img src="https://cdn.tgdd.vn/ValueIcons/iphone.jpg" alt="">
+                                            <p>iPhone(iOS)</p>
+                                        </button>
+                                        <button>
+                                            <img src="https://cdn.tgdd.vn/ValueIcons/dien-thoai-pho-thong.jpg" alt="DTPT">
+                                            <p>Điện thoại phổ thông</p>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="total-filter-modal__needs">
+                                    <label for="">Nhu cầu</label>
+                                    <div class="need-btn-list">
+                                        <button>Chơi game / Cấu hình cao</button>
+                                        <button>Pin khủng trên 5000 mAh</button>
+                                        <button>Chụp ảnh, quay phim</button>
+                                        <button>Livestream</button>
+                                        <button>Mỏng nhẹ</button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="total-filter-modal__content-row3"></div>
                             <div class="total-filter-modal__content-row4"></div>
                         </div>

@@ -88,8 +88,15 @@
         </div>
 
     </div>
+    <dialog>
+        <span>You can see me</span>
+    </dialog>
+
     <script>
         // Get the modal
+        const dialog = document.querySelector("dialog")
+        // dialog.show() // Opens a non-modal dialog
+        dialog.showModal() // Opens a modal
 
         var modalparent = document.getElementsByClassName("modal_multi");
 
