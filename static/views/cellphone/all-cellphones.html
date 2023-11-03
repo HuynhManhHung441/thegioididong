@@ -532,6 +532,10 @@
                     <div id="totalFilterModal" class="total-filter-modal">
                         <div class="total-filter-modal__content">
                             <button class="close-modal"><i class="fa-solid fa-xmark"></i> Đóng</button>
+                            <div class="total-filter__selected-criteria">
+                                <label for="">Đã chọn</label>
+                                <span class="remove-selected-criteria-btn">Xóa tất cả</span>
+                            </div>
                             <div class="total-filter-modal__content-row1">
                                 <div class="total-filter-modal__content-row1--brand">
                                     <label for="">Hãng</label>
@@ -587,25 +591,23 @@
                                                 <span>Hoặc chọn mức giá phù hợp với bạn</span>
                                                 <i class="fa-solid fa-sort-down"></i>
                                             </p>
-                                        </div>
-                                        <div class="wrapper">
-                                            <div class="price-input">
-                                              <div class="field">
-                                                <span>Min</span>
-                                                <input type="number" class="input-min" value="2500">
-                                              </div>
-                                              <div class="separator">-</div>
-                                              <div class="field">
-                                                <span>Max</span>
-                                                <input type="number" class="input-max" value="7500">
-                                              </div>
-                                            </div>
-                                            <div class="slider">
-                                              <div class="progress"></div>
-                                            </div>
-                                            <div class="range-input">
-                                              <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                                              <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                            <div class="wrapper">
+                                                <div class="price-input">
+                                                  <div class="field">
+                                                    <input type="number" class="input-min" value="2500">
+                                                  </div>
+                                                  <div class="separator">-</div>
+                                                  <div class="field">
+                                                    <input type="number" class="input-max" value="7500">
+                                                  </div>
+                                                </div>
+                                                <div class="slider">
+                                                  <div class="progress"></div>
+                                                </div>
+                                                <div class="range-input">
+                                                  <input type="range" class="range-min" min="0" max="48000" value="300" step="100">
+                                                  <input type="range" class="range-max" min="0" max="48000" value="4800" step="1000">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -638,9 +640,54 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="total-filter-modal__content-row3"></div>
-                            <div class="total-filter-modal__content-row4"></div>
+                            <div class="total-filter-modal__content-row3">
+                                <div class="total-filter-modal__ram">
+                                    <label for="">RAM</label>
+                                    <div class="ram-btn-list">
+                                        <button>2GB</button>
+                                        <button>3GB</button>
+                                        <button>4GB</button>
+                                        <button>6GB</button>
+                                        <button>8GB</button>
+                                        <button>12GB</button>
+                                    </div>
+                                </div>
+                                <div class="total-filter-modal__storage-capacity">
+                                    <label for="">Dung lượng lưu trữ</label>
+                                    <div class="storage-capacity-btn-list">
+                                        <button>32GB</button>
+                                        <button>64GB</button>
+                                        <button>128GB</button>
+                                        <button>256GB</button>
+                                        <button>516GB</button>
+                                        <button>1TB</button>
+                                    </div>
+                                </div>
+                                <div class="total-filter-modal__charging">
+                                    <label for="">Tính năng sạc</label>
+                                    <div class="charging-btn-list">
+                                        <button>Sạc nhanh (từ 20W)</button>
+                                        <button>Sạc siêu nhanh (từ 60W)</button>
+                                        <button>Sạc không dây</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-filter-modal__content-row4">
+                                <div class="total-filter-modal__special-feature">
+                                    <label for="">Tính năng đặc biệt</label>
+                                    <div class="special-feature-btn-list">
+                                        <button>Kháng nước, bụi</button>
+                                        <button>Hỗ trợ 5G</button>
+                                        <button>Bảo mật khuôn mặt 3D</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-filter-modal__btn--final-decision">
+                                <button>Bỏ chọn</button>
+                                <button>Xem <span>10</span> kết quả</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="cellphone-filters__criteria-list">

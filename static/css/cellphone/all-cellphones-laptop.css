@@ -158,8 +158,11 @@ main {
 
 .total-filter {
   position: relative;
-  background-color: aqua;
   z-index: 10;
+}
+
+#totalFilterBtn {
+  background-color: aqua;
 }
 
 .total-filter-modal {
@@ -187,6 +190,7 @@ main {
   border: 1px solid #888;
   width: 60%;
   height: 70%;
+  overflow-y: scroll;
 }
 
 button.close-modal {
@@ -196,10 +200,35 @@ button.close-modal {
   margin-right: 1rem;
 }
 
+.total-filter__selected-criteria {
+  height: max-content;
+  padding: 2rem;
+}
+
+.total-filter__selected-criteria label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.total-filter__selected-criteria span {
+  color: #3bacf0;
+  font-size: 1.4rem;
+  /* font-weight: bold; */
+  line-height: 2rem;
+}
+
 .total-filter-modal__content-row1,
-.total-filter-modal__content-row2 {
+.total-filter-modal__content-row2,
+.total-filter-modal__content-row3 {
+  height: max-content;
   padding: 2rem;
   border-bottom: 1px solid #d3d3d3;
+}
+
+.total-filter-modal__content-row4 {
+  height: max-content;
+  padding: 2rem;
 }
 
 .total-filter-modal__content label {
@@ -208,13 +237,33 @@ button.close-modal {
   line-height: 2rem;
 }
 
-.total-filter-modal__brand-list {
+.total-filter-modal__brand-list,
+.price-btn-list,
+.cellphone-type-btn-list,
+.need-btn-list,
+.ram-btn-list,
+.storage-capacity-btn-list,
+.charging-btn-list,
+.special-feature-btn-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   row-gap: 1rem;
   justify-content: start;
   align-items: center;
+}
+
+.price-range-accordion p {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #2493d7;
+}
+
+.price-range-accordion p i {
+  margin-left: 0.4rem;
+  padding-bottom: 0.6rem;
 }
 
 .total-filter-modal__brand-list button {
@@ -223,53 +272,43 @@ button.close-modal {
 
 .total-filter-modal__brand-list img {
   display: block;
-  width: 9.2rem;
+  width: 7.6rem;
   height: 2rem;
   object-fit: cover;
 }
 
-.total-filter-modal__content-row2 {
+.total-filter-modal__content-row2,
+.total-filter-modal__content-row3,
+.total-filter-modal__content-row4 {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 
-.total-filter-modal__prices {
-  width: 34%;
+.total-filter-modal__prices,
+.total-filter-modal__ram,
+.total-filter-modal__special-feature {
+  width: 32%;
 }
 
 /* -------------- */
-/* Import Google Font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-::selection {
-  color: #fff;
-  background: #17a2b8;
-}
 .wrapper {
-  width: 400px;
+  width: 100%;
   background: #fff;
   border-radius: 10px;
-  padding: 20px 25px 40px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
 }
-/* header h2 {
-  font-size: 24px;
-  font-weight: 600;
-}
-header p {
-  margin-top: 5px;
-  font-size: 16px;
-} */
+
 .price-input {
   width: 100%;
   display: flex;
-  margin: 30px 0 35px;
+  margin: 0 0 1rem;
 }
 .price-input .field {
   display: flex;
   width: 100%;
-  height: 45px;
+  height: 3rem;
   align-items: center;
 }
 .field input {
@@ -328,7 +367,6 @@ input[type="range"]::-webkit-slider-thumb {
   background: #17a2b8;
   pointer-events: auto;
   -webkit-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 input[type="range"]::-moz-range-thumb {
   height: 17px;
@@ -338,15 +376,16 @@ input[type="range"]::-moz-range-thumb {
   background: #17a2b8;
   pointer-events: auto;
   -moz-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 /* -------------- */
-.total-filter-modal__cellphone-types {
-  width: 30%;
+.total-filter-modal__cellphone-types,
+.total-filter-modal__storage-capacity {
+  width: 28%;
 }
-.total-filter-modal__needs {
-  width: 34%;
+.total-filter-modal__needs,
+.total-filter-modal__charging {
+  width: 32%;
 }
 
 .cellphone-type-btn-list {
@@ -512,11 +551,41 @@ input[type="range"]::-moz-range-thumb {
   vertical-align: middle;
 }
 
+.total-filter-modal__btn--final-decision {
+  width: 100%;
+  height: max-content;
+  padding: 2rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 -5px 5px #d3d3d3;
+  position: sticky;
+  bottom: 0;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.total-filter-modal__btn--final-decision button {
+  display: block;
+  width: 18%;
+  cursor: pointer;
+}
+
+.total-filter-modal__btn--final-decision button:first-child {
+  color: #e83a45;
+  border: 1px solid #e83a45;
+  /* background-color: #288ad6; */
+}
+.total-filter-modal__btn--final-decision button:last-child {
+  color: #fff;
+  border: 1px solid #288ad6;
+  background-color: #288ad6;
+}
+
 /* CELLPHONE LIST */
 .cellphone-list {
-  /* width: 1200px; */
-  /* height: 100%; */
-  /* margin: 15px auto 0 auto; */
   display: flex;
   flex-wrap: wrap;
 }
