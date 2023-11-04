@@ -23,6 +23,8 @@
     <!-- <script src="../../js/top1-slideshow-index.js" defer></script> -->
     <script src="../../js/total-filter-modal.js" defer></script>
     <script src="../../js/price-range-slider.js" defer></script>
+    <script src="../../js/price-range-accordion.js" defer></script>
+
     <script src="../../js/index/footer.js" defer></script>
 </head>
 
@@ -584,30 +586,28 @@
                                         <button>Từ 13 - 20 triệu</button>
                                         <button>Trên 20 triệu</button>
                                     </div>
-                                    <div class="price-range-slider">
-                                        <div class="price-range-accordion">
-                                            <p>
-                                                <img src="../../images/cellphone-page/iconcate-range.PNG" alt="Icon">
-                                                <span>Hoặc chọn mức giá phù hợp với bạn</span>
-                                                <i class="fa-solid fa-sort-down"></i>
-                                            </p>
-                                            <div class="wrapper">
-                                                <div class="price-input">
-                                                  <div class="field">
-                                                    <input type="number" class="input-min" value="2500">
-                                                  </div>
-                                                  <div class="separator">-</div>
-                                                  <div class="field">
-                                                    <input type="number" class="input-max" value="7500">
-                                                  </div>
-                                                </div>
-                                                <div class="slider">
-                                                  <div class="progress"></div>
-                                                </div>
-                                                <div class="range-input">
-                                                  <input type="range" class="range-min" min="0" max="48000" value="300" step="100">
-                                                  <input type="range" class="range-max" min="0" max="48000" value="4800" step="1000">
-                                                </div>
+                                    <div class="price-range-accordion">
+                                        <p>
+                                            <img src="../../images/cellphone-page/iconcate-range.PNG" alt="Icon">
+                                            <span>Hoặc chọn mức giá phù hợp với bạn</span>
+                                            <i class="fa-solid fa-sort-down"></i>
+                                        </p>
+                                        <div class="price-range-slider">
+                                            <div class="price-limit-range">
+                                              <div class="field">
+                                                <input type="number" class="input-min" value="2500">
+                                              </div>
+                                              <div class="separator">-</div>
+                                              <div class="field">
+                                                <input type="number" class="input-max" value="7500">
+                                              </div>
+                                            </div>
+                                            <div class="slider">
+                                              <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input">
+                                              <input type="range" class="range-min" min="300000" max="48000000" value="300" step="100000">
+                                              <input type="range" class="range-max" min="300000" max="48000000" value="4800" step="1000000">
                                             </div>
                                         </div>
                                     </div>

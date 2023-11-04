@@ -1,5 +1,5 @@
 const rangeInput = document.querySelectorAll(".range-input input"),
-priceInput = document.querySelectorAll(".price-input input"),
+priceInput = document.querySelectorAll(".price-limit-range input"),
 range = document.querySelector(".slider .progress");
 let priceGap = 1000;
 
