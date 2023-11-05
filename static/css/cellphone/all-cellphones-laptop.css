@@ -17,6 +17,7 @@ main {
   width: 66%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .promotion-slideshow__buttons {
@@ -28,6 +29,7 @@ main {
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.6;
+  z-index: 100;
 }
 
 .promotion__slideshow:hover > .promotion-slideshow__buttons {
@@ -77,7 +79,7 @@ main {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .promotion-slideshow__banner-list a {
