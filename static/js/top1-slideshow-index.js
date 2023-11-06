@@ -50,7 +50,7 @@ setInterval(() => {
     if (window.innerWidth <= 480){
         currentBannerIndexOnTop1Slideshow+=1;
         if (currentBannerIndexOnTop1Slideshow === Top1SlideshowBanners.length){
-            currentBannerIndexOnTop1Slideshow = 0
+            currentBannerIndexOnTop1Slideshow = 0;
         }
         showBannerOnTop1Slideshow(currentBannerIndexOnTop1Slideshow, 1, 0)
     }

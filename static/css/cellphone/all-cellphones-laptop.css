@@ -44,7 +44,7 @@ main {
   border-radius: 5px;
 }
 
-#promotion-slideshow__prev-sign {
+#promotion-slideshow__next-sign {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -63,7 +63,7 @@ main {
   border-radius: 5px;
 }
 
-#promotion-slideshow__next-sign {
+#promotion-slideshow__prev-sign {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -79,6 +79,7 @@ main {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  transition: 1s;
   /* overflow: hidden; */
 }
 

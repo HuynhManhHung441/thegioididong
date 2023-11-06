@@ -56,3 +56,29 @@ prevBtnOnTopPromotionSlideshow.onclick = function () {
     console.log("Clicked success")
     showBannerOnTopPromotionSlideshow(currentBannerIndexOnTopPromotionSlideshow, 1, 0)
 }
+
+setInterval (() => {
+    if (window.innerWidth >= 992) {
+        currentBannerIndexOnTopPromotionSlideshow += 1;
+        if (currentBannerIndexOnTopPromotionSlideshow === promotionSlideshowBanners.length){
+            currentBannerIndexOnTopPromotionSlideshow = 0;
+        }
+        showBannerOnTopPromotionSlideshow(currentBannerIndexOnTopPromotionSlideshow, 1, 0);
+    }
+    if (window.innerWidth < 992 & window.innerWidth > 480){
+        currentBannerIndexOnTopPromotionSlideshow += 1;
+        if (currentBannerIndexOnTopPromotionSlideshow === promotionSlideshowBanners.length){
+            currentBannerIndexOnTopPromotionSlideshow = 0;
+        }
+        showBannerOnTopPromotionSlideshow(currentBannerIndexOnTopPromotionSlideshow, 1, 0);
+    }
+    
+    if (window.innerWidth <= 480){
+        currentBannerIndexOnTopPromotionSlideshow += 1;
+        if (currentBannerIndexOnTopPromotionSlideshow === promotionSlideshowBanners.length){
+            currentBannerIndexOnTopPromotionSlideshow = 0
+        }
+        showBannerOnTopPromotionSlideshow(currentBannerIndexOnTopPromotionSlideshow, 1, 0);
+    }
+
+}, 4000)

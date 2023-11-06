@@ -2,15 +2,11 @@
   /********    MAIN     *****/
   main {
     width: 100%;
-    margin: 0;
-    position: relative;
-    background-color: #ffffff;
-    z-index: 99;
   }
   /* TOP SLIDESHOW BANNERS */
   .promotion {
-    height: 200px;
-    margin: 1.5rem auto 0 auto;
+    height: 13rem;
+    margin: 0 auto 0 auto;
     display: flex;
     justify-content: space-between;
   }
@@ -19,6 +15,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
   }
 
   .promotion-slideshow__buttons {
@@ -35,6 +32,7 @@
     align-items: center;
     width: 30%;
     height: 3%;
+    z-index: 11;
   }
 
   .slide-index-signs span {
@@ -70,7 +68,7 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .promotion-slideshow__banner-list a {
@@ -79,12 +77,12 @@
     height: 100%;
   }
 
-  .promotion-slideshow__banner-list img {
+  /* .promotion-slideshow__banner-list img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */
 
   .promotion__fixed-banner {
     display: none;
