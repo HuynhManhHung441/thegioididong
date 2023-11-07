@@ -23,7 +23,7 @@
 //     {container: 'promotion__slideshow'}
 // );
 
-
+const slideIndexSigns = document.querySelectorAll(".slide-index-signs span")
 const bannerListOfPromotionSlideshow = document.querySelector(".promotion__slideshow .promotion-slideshow__banner-list")
 const promotionSlideshowBanners = bannerListOfPromotionSlideshow.querySelectorAll('a')
 console.log("Number banners:",promotionSlideshowBanners)
@@ -57,6 +57,12 @@ prevBtnOnTopPromotionSlideshow.onclick = function () {
     showBannerOnTopPromotionSlideshow(currentBannerIndexOnTopPromotionSlideshow, 1, 0)
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+slideIndexSigns[currentBannerIndexOnTopPromotionSlideshow].style.backgroundColor = "darkred";
+
 setInterval (() => {
     if (window.innerWidth >= 992) {
         currentBannerIndexOnTopPromotionSlideshow += 1;
@@ -66,18 +72,25 @@ setInterval (() => {
         showBannerOnTopPromotionSlideshow(currentBannerIndexOnTopPromotionSlideshow, 1, 0);
     }
     if (window.innerWidth < 992 & window.innerWidth > 480){
+
         currentBannerIndexOnTopPromotionSlideshow += 1;
+        slideIndexSigns[currentBannerIndexOnTopPromotionSlideshow-1].style.backgroundColor = "cadetblue";
+        
         if (currentBannerIndexOnTopPromotionSlideshow === promotionSlideshowBanners.length){
             currentBannerIndexOnTopPromotionSlideshow = 0;
         }
+        
+        slideIndexSigns[currentBannerIndexOnTopPromotionSlideshow].style.backgroundColor = "darkred";
         showBannerOnTopPromotionSlideshow(currentBannerIndexOnTopPromotionSlideshow, 1, 0);
     }
     
     if (window.innerWidth <= 480){
         currentBannerIndexOnTopPromotionSlideshow += 1;
+        slideIndexSigns[currentBannerIndexOnTopPromotionSlideshow-1].style.backgroundColor = "cadetblue";
         if (currentBannerIndexOnTopPromotionSlideshow === promotionSlideshowBanners.length){
             currentBannerIndexOnTopPromotionSlideshow = 0
         }
+        slideIndexSigns[currentBannerIndexOnTopPromotionSlideshow].style.backgroundColor = "darkred";
         showBannerOnTopPromotionSlideshow(currentBannerIndexOnTopPromotionSlideshow, 1, 0);
     }
 
