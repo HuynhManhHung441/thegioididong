@@ -434,19 +434,34 @@ input[type="range"]::-moz-range-thumb {
   height: max-content;
 }
 
-.criteria--showed {
+.criteria__content {
+  display: none;
   width: 55rem;
   height: max-content;
   position: absolute;
   left: 0;
-  top: 135%;
+  top: 120%;
   z-index: 24;
-  padding: 1rem;
+  /* padding: 1rem; */
   border: 1px solid #d3d3d3;
   border-radius: 0.5rem;
-  background-color: #fff;
-  /* box-shadow: 3rem 3rem 1rem rgba(229, 222, 222, 0.6); */
-  box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
+}
+
+.criteria__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  border-style: solid;
+  border-width: 0 0.8rem 0.8rem 0.8rem;
+  border-color: transparent transparent #fff transparent;
+  transform: translateY(-100%);
+}
+
+.criteria__content--showed {
+  display: block;
 }
 
 .cellphone-filters-criteria__brand-list {
@@ -455,6 +470,7 @@ input[type="range"]::-moz-range-thumb {
   gap: 1rem;
   row-gap: 1rem;
   width: 100%;
+  margin: 1rem;
 }
 
 .cellphone-filters-criteria__brand-list button {
@@ -470,18 +486,13 @@ input[type="range"]::-moz-range-thumb {
 
 .cellphone-filters-criteria__btn--final-decisions {
   width: 100%;
-  /* height: max-content; */
   padding: 2rem;
-  background-color: #fff;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  box-shadow: 0 -5px 5px #d3d3d3;
-  /* position: sticky; */
-  /* bottom: 0;
-  margin-top: 1rem;
-  margin-bottom: 0rem; */
+  box-shadow: 0 -3px 3px #dddcdc;
 }
 
 .cellphone-filters-criteria__btn--final-decisions button {
@@ -493,7 +504,6 @@ input[type="range"]::-moz-range-thumb {
 .cellphone-filters-criteria__btn--final-decisions button:first-child {
   color: #e83a45;
   border: 1px solid #e83a45;
-  /* background-color: #288ad6; */
 }
 .cellphone-filters-criteria__btn--final-decisions button:last-child {
   color: #fff;
@@ -672,6 +682,10 @@ input[type="range"]::-moz-range-thumb {
   color: #fff;
   border: 1px solid #288ad6;
   background-color: #288ad6;
+}
+
+.criteria-btn--showed-dropdown {
+  border: 1px solid #288ad6;
 }
 
 /* CELLPHONE LIST */
