@@ -6,13 +6,6 @@ main {
   z-index: 99;
 }
 
-/* .layout--container {
-  height: max-content;
-  max-width: 80%;
-  margin: 0 auto;
-  position: relative;
-} */
-
 .cellphone-brand {
   margin-top: 1rem;
 }
@@ -219,7 +212,7 @@ h1 {
 }
 
 .introduce-slideshow-symbolic {
-  width: 575px;
+  width: 65%;
   height: 91px;
   display: flex;
   justify-content: space-between;
@@ -227,7 +220,7 @@ h1 {
 }
 
 .introduce-slideshow-symbolic a {
-  width: 55px;
+  width: 10%;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -240,8 +233,9 @@ h1 {
 }
 
 .introduce-slideshow-symbolic img {
-  width: 40px;
-  height: 40px;
+  display: block;
+  width: 90%;
+  aspect-ratio: 1;
   object-fit: fill;
 }
 

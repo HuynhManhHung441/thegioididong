@@ -1,0 +1,28 @@
+@media only screen and (max-width: 991px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cellphone-summary--right {
+    display: none;
+  }
+  .cellphone-introduce {
+    display: block;
+  }
+  .cellphone-summary--full {
+    width: 100%;
+  }
+  .buying-together-accessories__sildeshow {
+    overflow-x: scroll;
+  }
+
+  .buying-together-accessories__list {
+    overflow: visible;
+  }
+  .buying-together-accessories__card {
+    min-width: 35%;
+  }
+  .slide-buttons {
+    display: none;
+  }
+}

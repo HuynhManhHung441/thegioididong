@@ -1,0 +1,11 @@
+@media only screen and (max-width: 422px) {
+  main {
+    width: 100%;
+  }
+  .cellphone-summary--full {
+    width: 100%;
+  }
+  .buying-together-accessories__card {
+    min-width: 40%;
+  }
+}
