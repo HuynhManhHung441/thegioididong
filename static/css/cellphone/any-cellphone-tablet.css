@@ -9,6 +9,10 @@
   .cellphone-introduce {
     display: block;
   }
+
+  .cellphone-summary {
+    order: 10;
+  }
   .cellphone-summary--full {
     width: 100%;
   }
