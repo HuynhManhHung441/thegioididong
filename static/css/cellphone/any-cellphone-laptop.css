@@ -1464,13 +1464,15 @@ tr:nth-child(odd) {
 
 .buying-together-accessories__sildeshow {
   position: relative;
+  overflow: hidden;
 }
 
 .buying-together-accessories__list {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  overflow: hidden;
+  transition: 1s;
 }
 
 .buying-together-accessories__card {
@@ -1621,6 +1623,7 @@ tr:nth-child(odd) {
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.6;
+  transition: 1s;
 }
 
 .slide-buttons__next-btn {
@@ -1631,7 +1634,9 @@ tr:nth-child(odd) {
   background-color: #f6f6f6;
   position: relative;
   overflow: hidden;
+  transition: 1s;
 }
+
 .slide-buttons__prev-btn {
   display: none;
   height: 100%;
@@ -1641,6 +1646,7 @@ tr:nth-child(odd) {
   background-color: #f6f6f6;
   position: relative;
   overflow: hidden;
+  transition: 1s;
 }
 .slide-buttons__prev-sign {
   height: 40%;
