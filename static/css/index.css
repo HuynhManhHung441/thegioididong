@@ -745,6 +745,7 @@ main {
 .flash-sale__slideshow--visible {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .flash-sale__card-list {
@@ -753,7 +754,8 @@ main {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */
+  transition: 1s;
 }
 
 .flash-sale__card {
