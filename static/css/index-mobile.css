@@ -422,6 +422,129 @@
     -webkit-line-clamp: 4;
   }
 
+  /* AVA KIDS */
+  .ava-kids {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 37.2rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .ava-kids__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 26%;
+  }
+
+  a.ava-kids__logo {
+    display: block;
+    width: 40%;
+    height: 70%;
+  }
+
+  .ava-kids__free-ship {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0;
+  }
+
+  .ava-kids__see-more {
+    display: none;
+  }
+
+  .ava-kids__logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .ava-kids__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 73%;
+  }
+
+  .ava-kids__input-form {
+    min-width: 41%;
+    padding: 0.5rem;
+    /* height: 100%;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fefcec;
+      border-radius: 0.5rem; */
+  }
+
+  .ava-kids__input-form p:nth-child(1) {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-weight: bold;
+    color: #ed1164;
+  }
+
+  .ava-kids__input-form p span {
+    font-weight: lighter;
+  }
+
+  .ava-kids__input-form form {
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.3%;
+  }
+
+  /* .ava-kids__input-form form input {
+      height: 30%;
+      border: solid 1px #bdbdbd;
+      border-radius: 0.5rem;
+    } */
+
+  .ava-kids__input-form form input:nth-child(1),
+  .ava-kids__input-form form input:nth-child(2) {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+
+  .ava-kids__input-form form input:last-child {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #ffffff;
+    background-color: #bdbdbd;
+  }
+
+  .ava-kids__input-form ul {
+    list-style-type: none;
+  }
+
+  .ava-kids__input-form ul li {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #555555;
+  }
+
+  .ava-kids__banner-list--layout {
+    width: 58%;
+    overflow-x: scroll;
+  }
+  .ava-kids__banner-list {
+    gap: 1.5%;
+  }
+  .ava-kids__banner-list a {
+    display: block;
+    min-width: 66%;
+    height: 100%;
+  }
+
   /* FOOTER */
   footer {
     width: 100%;
