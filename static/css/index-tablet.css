@@ -479,6 +479,10 @@
     display: none;
   }
 
+  .samsung-week {
+    display: none;
+  }
+
   .featured-category {
     margin-top: 2rem;
     height: 32rem;

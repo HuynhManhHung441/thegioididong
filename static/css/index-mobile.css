@@ -353,6 +353,10 @@
     display: none;
   }
 
+  .samsung-week {
+    display: none;
+  }
+
   .featured-category__list {
     width: 1000px;
   }

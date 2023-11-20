@@ -933,6 +933,279 @@ main {
   opacity: 1;
 }
 
+/* TUẦN LỄ SAMSUNG */
+.samsung-week {
+  height: 82rem;
+  padding: 0 1.5rem;
+  margin: 2rem auto;
+  background-color: #0b37f4;
+  border-radius: 1.5rem;
+}
+
+.samsung-week > p {
+  height: 92px;
+  padding: 20px 0 30px 0;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.samsung-week__banner-slideshow {
+  height: 202px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.samsung-week-slideshow__banners {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25%;
+  overflow: hidden;
+}
+
+.samsung-week-slideshow__banners a {
+  display: block;
+  min-width: 32.5%;
+  /* margin-right: 0.5%; */
+  height: 100%;
+}
+
+.samsung-week-slideshow__banners img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  /* margin-right: 10px; */
+}
+
+.samsung-week-banner__buttons {
+  width: calc(100% + 44px);
+  /* width: 1224px; */
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -22px;
+}
+
+.samsung-week-banner__buttons button {
+  width: 44px;
+  height: 44px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.samsung-week-banner__buttons button:hover {
+  opacity: 1;
+}
+
+.samsung-week > button {
+  width: 370px;
+  height: 48px;
+  background-color: #fbfbfb;
+  color: #3e3b3b;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+}
+
+.samsung-week-banner__buttons {
+  position: absolute;
+}
+
+.samsung-week__card-slideshow {
+  width: 100%;
+  height: 432px;
+  position: relative;
+}
+
+.samsung-week-card__buttons {
+  width: calc(100% + 3rem);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.5rem;
+  z-index: 10;
+  opacity: 0.5;
+}
+
+#samsung-week-card__prev-btn {
+  width: 30px;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+  padding-left: 10px;
+  background-color: #f3f3f3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#samsung-week-card__next-btn {
+  width: 30px;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  font-size: 20px;
+  padding-right: 30px;
+  background-color: #f3f3f3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#samsung-week-card__prev-sign {
+  width: 25px;
+  height: 25px;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+#samsung-week-card__next-sign {
+  width: 25px;
+  height: 25px;
+  border-top: 3px solid gray;
+  border-right: 3px solid gray;
+  position: absolute;
+  right: 10px;
+  transform: rotate(45deg);
+}
+
+.samsung-week__card-slideshow:hover > .samsung-week-card__buttons {
+  opacity: 1;
+}
+
+.samsung-week__card-list {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25%;
+  overflow: hidden;
+}
+
+.samsung-week__card {
+  min-width: 19%;
+  padding: 10px;
+  height: 432px;
+  /* margin-right: 1.25%; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.samsung-week__card-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.samsung-week__product {
+  width: 206px;
+  height: 213px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: 1s;
+}
+
+.samsung-week__discount-label--pink {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  background: var(--discount-label-pink-background);
+  border-radius: 10px;
+  padding-right: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.samsung-week__discount-label--blue {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  background: var(--discount-label-blue-background);
+  border-radius: 10px;
+  padding-right: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.samsung-week__discount-label--pink img,
+.samsung-week__discount-label--blue img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  object-fit: cover;
+}
+
+.samsung-week__discount-label--pink span,
+.samsung-week__discount-label--blue span {
+  vertical-align: middle;
+  line-height: normal;
+}
+.samsung-week__img {
+  width: 206px;
+  height: 206px;
+}
+
+.samsung-week__label {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.samsung-week__name {
+  font-size: var(--product-card-name-font-size);
+  color: #333;
+  /* margin-top: 10px; */
+  margin-bottom: 15px;
+}
+
+.samsung-week__product:hover {
+  transform: translateY(-7px);
+}
+
+.online-price__label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.online-price__label img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.online-price__label span {
+  font-size: 14px;
+  color: #333;
+}
+
 .featured-category {
   margin-top: 3rem;
   height: 34.4rem;
