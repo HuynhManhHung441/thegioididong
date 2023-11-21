@@ -8,6 +8,8 @@
   --section-title-font-size: 22px;
   --section-title-color: #5909db;
   --product-card-name-font-size: 14px;
+  --current-price-color: #d0021c;
+  --current-price-font-size-on-laptop: 18px;
   --discount-label-pink-background: linear-gradient(to right, #e91f63, #db2663);
   --discount-label-blue-background: linear-gradient(to right, #3bacf0, #1b6dc1);
 }
@@ -956,6 +958,7 @@ main {
   height: 202px;
   margin-bottom: 15px;
   position: relative;
+  z-index: 120;
 }
 
 .samsung-week-slideshow__banners {
@@ -1008,12 +1011,14 @@ main {
 }
 
 .samsung-week > button {
-  width: 370px;
-  height: 48px;
-  background-color: #fbfbfb;
-  color: #3e3b3b;
-  margin: 15px auto;
   display: block;
+  width: 30%;
+  height: 48px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #fbfbfb;
+  margin: 1.5rem auto;
   border-radius: 10px;
   border: none;
 }
@@ -1038,7 +1043,7 @@ main {
   top: 50%;
   transform: translateY(-50%);
   left: -1.5rem;
-  z-index: 10;
+  z-index: 150;
   opacity: 0.5;
 }
 
@@ -1118,8 +1123,25 @@ main {
   text-decoration: none;
 }
 
+.samsung-week__product-card-payment {
+  width: max-content;
+  height: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.samsung-week__installment {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  line-height: 12px;
+  color: #333333;
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+}
 .samsung-week__product {
-  width: 206px;
+  width: 100%;
   height: 213px;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -1166,12 +1188,13 @@ main {
   line-height: normal;
 }
 .samsung-week__img {
-  width: 206px;
+  display: block;
+  width: 100%;
   height: 206px;
 }
 
 .samsung-week__label {
-  width: 50px;
+  width: 25%;
   height: 50px;
   position: absolute;
   bottom: 0;
@@ -1185,25 +1208,57 @@ main {
   margin-bottom: 15px;
 }
 
+.samsung-week__card:hover .samsung-week__name {
+  color: #288ad6;
+}
+
 .samsung-week__product:hover {
   transform: translateY(-7px);
 }
 
-.online-price__label {
+.samsung-week__price {
+  font-size: var(--current-price-font-size-on-laptop);
+  line-height: 18px;
+  color: var(--current-price-color);
+  font-weight: bold;
+}
+
+.samsung-week__price span {
+  font-size: 14px;
+  line-height: 18px;
+  color: #eb5757;
+  background-color: #fff0e9;
+  margin-left: 1rem;
+}
+
+.samsung-week__star-vote {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fb6e2e;
+}
+
+.samsung-week__star-vote i {
+  font-size: 1.2rem;
+}
+.samsung-week__star-vote span {
+  color: #999999;
+}
+
+.samsung-week__online-price-label {
   display: inline-flex;
   align-items: center;
 }
 
-.online-price__label img {
+.samsung-week__online-price-label img {
   width: 20px;
   height: 20px;
   object-fit: cover;
   margin-right: 5px;
 }
 
-.online-price__label span {
+.samsung-week__online-price-label span {
   font-size: 14px;
-  color: #333;
+  color: #666666;
 }
 
 .featured-category {
