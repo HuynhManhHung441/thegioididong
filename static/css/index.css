@@ -1261,6 +1261,31 @@ main {
   color: #666666;
 }
 
+.samsung-week__discount-tag {
+  width: 113px;
+  height: 20px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #faab08, #d42611);
+  align-items: center;
+}
+
+.samsung-week__discount-tag img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.samsung-week__discount-tag p {
+  color: #f3f3f3;
+  font-weight: 400;
+}
+
 .featured-category {
   margin-top: 3rem;
   height: 34.4rem;
