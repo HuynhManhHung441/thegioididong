@@ -205,12 +205,14 @@ button.close-modal {
 }
 
 .total-filter__selected-criteria label {
+  display: none;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 2rem;
 }
 
 .total-filter__selected-criteria span {
+  display: none;
   color: #3bacf0;
   font-size: 1.4rem;
   /* font-weight: bold; */
@@ -652,11 +654,12 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .total-filter-modal__btn--final-decision {
+  display: none;
   width: 100%;
   height: max-content;
   padding: 2rem;
   background-color: #ffffff;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   gap: 1rem;
