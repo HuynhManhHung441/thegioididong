@@ -876,6 +876,53 @@
     display: none;
   }
 
+  /* CHUYÊN TRANG THƯƠNG HIỆU */
+  .brand-page {
+    height: 263px;
+  }
+
+  .brand-page p {
+    font-size: 1.6rem;
+    padding: 10px 0 15px 0;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .brand-page__slider {
+    max-width: 100%;
+    height: 212px;
+    position: relative;
+    overflow-x: scroll;
+  }
+
+  .brand-page__banner {
+    min-width: 100%;
+    height: 212px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25%;
+    overflow: visible;
+  }
+
+  .brand-page__banner a {
+    display: block;
+    min-width: 40%;
+    height: 100%;
+  }
+
+  .brand-page__banner img {
+    display: block;
+    min-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .brand-page__button {
+    display: none;
+  }
+
   /* AVA KIDS */
   .ava-kids {
     display: flex;

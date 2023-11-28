@@ -1557,6 +1557,69 @@ main {
   border-radius: 1rem;
 }
 
+/* CHUYÊN TRANG THƯƠNG HIỆU */
+.brand-page {
+  height: 263px;
+}
+
+.brand-page p {
+  font-size: var(--section-title-font-size);
+  padding: 10px 0 15px 0;
+  color: var(--section-title-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.brand-page__slider {
+  width: 100%;
+  height: 212px;
+  position: relative;
+}
+
+.brand-page__banner {
+  width: 100%;
+  height: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25%;
+  overflow: hidden;
+}
+
+.brand-page__banner a {
+  display: block;
+  min-width: 32.5%;
+  height: 100%;
+}
+
+.brand-page__banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.brand-page__button {
+  width: calc(100% + 44px);
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  transform: translateY(-50%);
+}
+
+.brand-page__button button {
+  width: 44px;
+  height: 44px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  border: none;
+  color: #333;
+  font-size: 20px;
+}
+
 /* AVA KIDS */
 .ava-kids {
   display: flex;
