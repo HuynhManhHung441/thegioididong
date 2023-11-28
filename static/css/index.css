@@ -6,7 +6,7 @@
 
 :root {
   --section-title-font-size: 22px;
-  --section-title-color: #5909db;
+  --section-title-color: #000;
   --product-card-name-font-size: 14px;
   --current-price-color: #d0021c;
   --current-price-font-size-on-laptop: 18px;
@@ -1452,6 +1452,226 @@ main {
   margin-top: 1.5rem;
 }
 
+/* GỢI Ý HÔM NAY */
+.today-suggestion {
+  /* width: 1200px; */
+  height: max-content;
+  margin: 20px auto;
+}
+
+.today-suggestion > p {
+  font-size: var(--section-title-font-size);
+  text-transform: uppercase;
+  color: var(--section-title-color);
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 2rem;
+}
+
+.today-suggestion__types {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.today-suggestion__types a {
+  width: 24%;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.today-suggestion__types a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.today-suggestion__types a:first-child {
+  background-color: #feb70b;
+}
+
+.today-suggestion__for-you-list {
+  width: 100%;
+  height: max-content;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 1%;
+  row-gap: 1.5rem;
+}
+
+.today-suggestion__gaming-laptop-list {
+  display: none;
+}
+
+.today-suggestion__discounted-accessory-list {
+  display: none;
+}
+
+.today-suggestion__cheap-tablet-list {
+  display: none;
+}
+
+.today-suggestion__card {
+  width: 19.2%;
+  height: 476px;
+  background-color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.today-suggestion__card > a {
+  text-decoration: none;
+}
+
+.today-suggestion__card > a > p {
+  height: 18px;
+}
+
+.today-suggestion-card__product {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.today-suggestion-card__product img:nth-child(1) {
+  display: block;
+  width: auto;
+  max-width: 90%;
+  height: 90%;
+  object-fit: fill;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.today-suggestion-card__product img:nth-child(2) {
+  display: block;
+  max-width: 20%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+}
+
+.product-card-payment {
+  width: 100%;
+  height: 23px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.today-suggestion-card__installment {
+  height: 18px;
+  font-size: 11px;
+  line-height: 12px;
+  display: inline;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 2px;
+  /* margin-right: 4px; */
+
+  padding: 3px;
+}
+
+.today-suggestion-card__discount-tag {
+  width: max-content;
+  height: 20px;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #faab08, #d42611);
+  align-items: center;
+}
+
+.today-suggestion-card__discount-tag img {
+  display: block;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.today-suggestion-card__discount-tag span {
+  color: #f3f3f3;
+  font-weight: 400;
+}
+
+.today-suggestion-card__name {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.today-suggestion-card__sell-method,
+.today-suggestion-card__gift {
+  font-size: 14px;
+  color: #757474;
+  margin-bottom: 15px;
+}
+
+.today-suggestion-card__price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c01313;
+  margin-bottom: 15px;
+}
+
+.today-suggestion-card__price span {
+  margin-left: 10px;
+  color: #df6161;
+  background-color: #fff0e9;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.today-suggestion-card__star-vote {
+  font-size: 14px;
+  color: #fb6e31;
+  font-weight: bold;
+}
+
+.today-suggestion-card__star-vote span {
+  color: #abaaaa;
+  font-size: 14px;
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+.today-suggestion button {
+  width: 340px;
+  height: 48px;
+  margin: 15px auto;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #494949;
+  border-radius: 5px;
+  border: none;
+  display: block;
+}
+
 /* 24H CÔNG NGHỆ */
 .technology-24h {
   margin-top: 3rem;
@@ -1560,6 +1780,7 @@ main {
 /* CHUYÊN TRANG THƯƠNG HIỆU */
 .brand-page {
   height: 263px;
+  margin: 2rem auto;
 }
 
 .brand-page p {

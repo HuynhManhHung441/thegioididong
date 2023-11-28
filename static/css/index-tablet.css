@@ -923,6 +923,10 @@
     display: none;
   }
 
+  .today-suggestion {
+    display: none;
+  }
+
   /* AVA KIDS */
   .ava-kids {
     display: flex;
