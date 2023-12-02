@@ -1,15 +1,19 @@
-let mainHeaderInventoryBtn = document.querySelector(".main-header__inventory")
-let mainHeaderInventoryModal = document.querySelector(".delivery-address-modal__background")
-mainHeaderInventoryBtn.addEventListener("click", function() {
-    mainHeaderInventoryModal.style.display = "flex";
-});
 
-document.querySelector(".delivery-address-modal__close-btn").addEventListener("click", function() {
-    mainHeaderInventoryModal.style.display = "none";
-});
-
-window.onclick = function(event) {
-    if (event.target == mainHeaderInventoryModal) {
-        mainHeaderInventoryModal.style.display = "none";
-    }
+const headerInventoryModalOpenBtn = document.querySelector(".main-header__inventory");
+const mainHeaderInventoryModal = document.querySelector(".delivery-address__modal-overlay");
+const headerInventoryModalCloseBtn = document.querySelector(".delivery-address__close-modal-btn");
+ 
+function openModal() {
+    mainHeaderInventoryModal.classList.remove("hide");
 }
+ 
+function closeModal(e, clickedOutside) {
+    if (clickedOutside) {
+        if (e.target.classList.contains("delivery-address__modal-overlay"))
+        mainHeaderInventoryModal.classList.add("hide");
+    } else mainHeaderInventoryModal.classList.add("hide");
+}
+ 
+headerInventoryModalOpenBtn.addEventListener("click", openModal);
+mainHeaderInventoryModal.addEventListener("click", (e) => closeModal(e, true));
+headerInventoryModalCloseBtn.addEventListener("click", closeModal);
