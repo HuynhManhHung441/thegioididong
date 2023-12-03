@@ -479,6 +479,9 @@
     display: none;
   }
 
+  .cheap-product {
+    display: none;
+  }
   /* TUẦN LỄ SAMSUNG */
   .samsung-week {
     height: 67rem;
