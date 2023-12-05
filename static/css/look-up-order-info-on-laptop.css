@@ -1,7 +1,7 @@
 /* MAIN */
 main {
-  position: relative;
-  z-index: 99;
+  /* position: relative; */
+  /* z-index: 99; */
   background-color: #f4f6f9;
 }
 
@@ -9,58 +9,70 @@ main {
   /* width: 1200px; */
   height: max-content;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 5rem 0;
   display: flex;
+  justify-content: space-around;
 }
 
 .left_image {
-  width: 540px;
-  height: 270px;
-  margin-right: 50px;
+  display: block;
+  width: 40%;
+  aspect-ratio: 1/0.7;
+  object-fit: cover;
+  margin-right: 5rem;
 }
 
 .look_up_order_info_form {
-  width: 500px;
-  height: 369px;
-  padding: 60px;
+  width: 40%;
+  height: max-content;
+  padding: 6rem;
   background-color: #ffffff;
-
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .look_up_order_info_form label {
-  width: 302px;
+  width: max-content;
   height: 36px;
-  margin: 15px auto;
+  /* margin: 15px auto; */
   font-size: 24px;
   color: #848282;
   font-weight: 100;
+  margin-bottom: 2rem;
 }
 
-.look_up_order_info_form > i {
+.input_info {
+  width: 80%;
+  height: 5rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.input_info > i {
   font-size: 20px;
   position: absolute;
-  top: 153px;
-  left: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
 }
 
-.look_up_order_info_form input {
-  width: 302px;
-  height: 48px;
+.input_info > input {
+  width: 100%;
+  height: 5rem;
   padding: 10px 40px;
   border: 1px solid gray;
   border-radius: 25px;
   background-color: #ffffff;
-  margin: 15px auto;
+  /* margin: 15px auto; */
 }
 
 .look_up_order_info_form button {
-  width: 302px;
-  height: 50px;
-  margin: 0 auto;
+  width: 80%;
+  height: 5rem;
+  /* margin: 0 auto; */
   background-color: #f96f3a;
   border-radius: 25px;
   border: none;
