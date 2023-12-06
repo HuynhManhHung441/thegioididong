@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="../css/repeat/footer-mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/07cc7d5672.js" crossorigin="anonymous"></script>
-    <script src="../js/top2-slideshow-index.js" defer></script>
+    <!-- <script src="../js/top2-slideshow-index.js" defer></script> -->
     <script src="../js/top1-slideshow-index.js" defer></script>
-    <script src="../js/index/delivery-address-modal.js" defer></script>
-    <script src="../js/index/flash-sale-slideshow.js" defer></script>
-    <script src="../js/index/today-suggestion__see-more.js" defer></script>
-    <script src="../js/brand-page__slider.js" defer></script>
+    <!-- <script src="../js/index/delivery-address-modal.js" defer></script> -->
+    <script src="../js/look-up-order-info.js" defer></script>
+    <!-- <script src="../js/index/today-suggestion__see-more.js" defer></script> -->
+    <!-- <script src="../js/brand-page__slider.js" defer></script> -->
     <script src="../js/index/footer.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -481,14 +481,12 @@
                 <label for="phone">Tra cứu thông tin đơn hàng</label>
                 <div class="input_info">
                     <i class="fa-solid fa-mobile input-icon"></i>
-                    <input type="tel" id="phone" placeholder="Nhập số điện thoại mua hàng">
+                    <input type="tel" id="phoneNumber" class="input_info__phone_number" name="phone_number" placeholder="Nhập số điện thoại mua hàng">
                     <div class="input_info__message"></div>
                 </div>
-                <button type="submit">Tiếp tục</button>
+                <button type="submit" class="look_up_order_info_submit_btn">Tiếp tục</button>
             </form> 
         </div>
-        
-        
     </main>
     <footer>
         <div class="footer__contents container">
