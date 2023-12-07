@@ -21,8 +21,6 @@ function handleLookUpInputInfo(event) {
         orderInforInputSelector.classList.remove("alert_error--on-input");
         alertErorrMessage.textContent = "";
     }
-    console.log("handleLookUpInputInfo was worked")
-    console.log(orderInforInputSelector.value);
 }
 
 
