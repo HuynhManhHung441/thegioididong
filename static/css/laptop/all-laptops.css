@@ -127,6 +127,11 @@ main {
   text-decoration: none;
   background-color: #ffffff;
   border-radius: 2rem;
+  transition: 0.1s;
+}
+
+.laptop-brands ul li a:hover {
+  border: 2px solid #288ad6;
 }
 
 .laptop-brands ul li a img {
@@ -139,6 +144,9 @@ main {
 .laptop-menu--top {
   height: 11rem;
   background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .laptop-menu--top ul {
@@ -161,6 +169,10 @@ main {
   min-height: 100%;
 }
 
+.laptop-menu--top ul li a:hover > .laptop-menu__icon-frame {
+  background-color: gold;
+}
+
 .laptop-menu__icon-frame {
   width: 37%;
   aspect-ratio: 1;
@@ -181,4 +193,190 @@ main {
   line-height: 17px;
   padding: 1rem 0 0 0;
   color: #ffffff;
+}
+
+.software {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.software__banner {
+  display: block;
+  min-width: 100%;
+  height: 20rem;
+}
+
+.software__banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.software__card-list {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  list-style-type: none;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 0.75%;
+  row-gap: 1rem;
+}
+
+.software__card-list li {
+  width: 19.4%;
+  min-height: max-content;
+  background-color: #ffffff;
+}
+
+.software__card {
+  display: flex;
+  min-width: 100%;
+  height: max-content;
+  padding: 3rem 1.5rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-decoration: none;
+  row-gap: 1rem;
+}
+
+.software__card > img {
+  display: block;
+  width: 100%;
+  height: 20.3rem;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.software__card:hover > img {
+  transform: translateY(-1rem);
+}
+
+.software__name {
+  color: #333;
+  font-size: 14px;
+  /* margin-bottom: 5px; */
+}
+
+.software__card:hover > .software__name {
+  color: #288ad6;
+}
+
+.software__shelf-life {
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333;
+}
+
+.software__shelf-life span {
+  border: 1px solid #a5a5a5;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.software__sale-off {
+  font-size: 14px;
+  color: #606060;
+}
+
+.software__sale-off span:first-child {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.software__price {
+  color: #e83a45;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.software__star-rate {
+  display: flex;
+}
+
+.software__star-rate i {
+  color: darkorange;
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.software__star-rate span {
+  color: #9a9898;
+  font-size: 12px;
+}
+
+.software__language {
+  margin-bottom: -1rem;
+}
+
+.software__language,
+.software__uses {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #222222;
+  /* margin-bottom: -1rem; */
+}
+
+.software__comparison--add {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.software__comparison--add img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  margin-right: 3px;
+}
+
+.software__comparison--add span {
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #288ad6;
+}
+
+.software__comparison--remove {
+  display: none;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.software__comparison--remove img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  margin-right: 3px;
+}
+
+.software__comparison--remove span {
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #288ad6;
+}
+
+.see-all-btn--all-laptops-page {
+  display: inline-flex;
+  min-width: 30%;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border-radius: 1rem;
 }
