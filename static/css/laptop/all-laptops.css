@@ -95,6 +95,47 @@ main {
   border-radius: 0.5rem;
 }
 
+.laptop-brands {
+  height: 11.8rem;
+  background-color: #e0e0e0;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+}
+
+.laptop-brands ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+  height: 100%;
+  list-style-type: none;
+}
+
+.laptop-brands ul li {
+  width: 11%;
+  height: 40%;
+  margin-right: 1.5%;
+}
+
+.laptop-brands ul li a {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 2rem;
+}
+
+.laptop-brands ul li a img {
+  display: block;
+  width: 75%;
+  height: 85%;
+  object-fit: contain;
+}
+
 .laptop-menu--top {
   height: 11rem;
   background-color: #000000;
