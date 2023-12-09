@@ -205,7 +205,14 @@ main {
   color: #000;
 }
 
-.software {
+.software1,
+.software2,
+.software3,
+.software4,
+.software5,
+.software6,
+.software7,
+.software8 {
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
