@@ -4,53 +4,831 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QA</title>
-    <link rel="stylesheet" href="../../css/responsive-layout/grid.css">
-    <style>
-        body {
-            margin: 0;
-        }
+    <link rel="stylesheet" href="../../css/responsive-layout/grid-system.css">
+    <link rel="stylesheet" href="../../css/repeat/header-laptop.css">
+    <link rel="stylesheet" href="../../css/repeat/header-tablet.css">
+    <link rel="stylesheet" href="../../css/repeat/header-mobile.css">
 
-        .QA__content {
-            height: 300px;
-            background-color: darkgray;
-        }
-
-        .navbar-menu {
-            background-color: blue;
-            /* height: 100%; */
-        }
-
-        .QA__info {
-            background-color: cadetblue;
-            /* height: 100%; */
-        }
-
-        p {
-            color: aqua;
-            /* height: 300px; */
-            text-align: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../../css/repeat/footer-laptop.css">
+    <link rel="stylesheet" href="../../css/repeat/footer-tablet.css">
+    <link rel="stylesheet" href="../../css/repeat/footer-mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/07cc7d5672.js" crossorigin="anonymous"></script>
+    <script src="../../js/top2-slideshow-index.js" defer></script>
+    <script src="../../js/top1-slideshow-index.js" defer></script>
+    <script src="../../js/QA/QA__topics.js" defer></script>
+    <script src="../../js/index/delivery-address-modal.js" defer></script>
+    <script src="../../js/index/flash-sale-slideshow.js" defer></script>
+    <script src="../../js/index/today-suggestion__see-more.js" defer></script>
+    <script src="../../js/brand-page__slider.js" defer></script>
+    <script src="../../js/index/footer.js" defer></script>
+    <link rel="stylesheet" href="../../css/QA/question-and-answer.css">
 </head>
 <body>
-    <header></header>
-    <main>
-        <section class="grid wide">
-            <div class="row">
-                <div class="col l-4">
-                    <div class="navbar-menu">
-                        <p>Navbar menu</p>
+    <header>
+        <!-- TOP-HEADER -->
+        <section class="top-header">
+            <div class="top-header__slideshow container">
+                <div class="top-header__slide">
+                    <div class="slideshow__banner-list">
+                        <div class="banner--on-desktop">
+                            <a href="#" target="_blank"><img src="../../images/index/header/event-lap-1200-44-1200x44-1.webp" alt="" srcset=""></a>
+                        </div>
+                        <div class="banner--on-desktop">
+                            <a href="#" target="_blank"><img src="../../images/index/header/IP15-1200-44-1200x44.webp" alt="" srcset=""></a>
+                        </div>
+                        <div class="banner--on-desktop">
+                            <a href="#" target="_blank"><img src="../../images/index/header/DH-Ty-Ty-1200-44-1200x44.webp" alt="" srcset=""></a>
+                        </div>
+                        <div class="banner--on-mobile">
+                            <a href="#" target="_blank"><img src="../../images/index/header/Lap-680-88-680x88.webp" alt="" srcset=""></a>
+                        </div>
+                        <div class="banner--on-mobile">
+                            <a href="#" target="_blank"><img src="../../images/index/header/IP15-680-88-680x88.webp" alt="" srcset=""></a>
+                        </div>
+                        <div class="banner--on-mobile">
+                            <a href="#" target="_blank"><img src="../../images/index/header/BIG-T10-680-88-680x88.webp" alt="" srcset=""></a>
+                        </div>
+                    </div>
+                    <div class="slideshow__buttons--moved">
+                        <div class="prev-btn" id="prev-button"></div>
+                        <div class="next-btn" id="next-button"></div>
+                    </div>
+                    <div class="slideshow__slide-index-signs">
+                        <span class="slide-index-sign"></span>
+                        <span class="slide-index-sign"></span>
+                        <span class="slide-index-sign"></span>
                     </div>
                 </div>
-                <div class="col l-8">
-                    <div class="QA__info">
-                        <p>QA information</p>
+            <!-- </div> -->
+        </section>
+        
+        <nav class="main-header container">
+            <div class="container">   
+                <div class="main-header-desktop">
+                    <div class="main-header-desktop__row-1">
+                        <div class="main-header__logo">
+                            <a href="#"><img src="../../images/index/header/Logo-The-Gioi-Di-Dong-MWG-B-H copy.webp" alt="logoTGDD" srcset=""></a>
+                        </div>
+                        <div class="main-header__inventory">
+                            <button type="button"><a>Xem giá, tồn kho tại:<br><strong>Hồ Chí Minh</strong></a></button>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                        <!-- <div class="delivery-address__modal-overlay hide">
+                            <div class="delivery-address__modal-wrapper">
+                                <div class="delivery-address__close-btn-wrapper">
+                                    <button class="delivery-address__close-modal-btn"><i class="fa-solid fa-xmark"></i> Đóng</button>
+                                </div>
+                                <div class="delivery-address__modal-content">
+                                    <form class="delivery-address--text-input">
+                                        <label>Quý khách vui lòng cho biết <strong>Địa Chỉ Nhận Hàng</strong> để biết chính xác thời gian giao hàng</label>
+                                        <div class="delivery-address__search-box">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            <input type="search" name="delivery-address__search-box" id="delivery-address__search-box" placeholder="Tìm nhanh tỉnh thành, quận huyện, phường xã">
+                                        </div>
+                                    </form>
+                                    <div class="delivery-address--selected">
+                                        <p>Hoặc chọn tỉnh, thành phố</p>
+                                        <ul class="delivery-address__province-list">
+                                            <li>Hồ Chí Minh</li>
+                                            <li>Hà Nội</li>
+                                            <li>Bình Dương</li>
+                                            <li>Đồng Nai</li>
+                                            <li>Quảng Ngãi</li>
+                                            <li>Bà rịa Vũng Tàu</li>
+                                            <li>Hải Phòng</li>
+                                            <li>Nghệ An</li>
+                                            <li>Quảng Nam</li>
+                                            <li>Thừa Thiên Huế</li>
+                                            <li>Tiền Giang</li>
+                                            <li>Kiên Giang</li>
+                                            <li>Kon Tum</li>
+                                            <li>Lai Châu</li>
+                                            <li>Lạng Sơn</li>
+                                            <li>Lào Cai</li>
+                                            <li>Lâm Đồng</li>
+                                            <li>Long An</li>
+                                            <li>Nam Định</li>
+                                            <li>Ninh Thuận</li>
+                                            <li>Phú Thọ</li>
+                                            <li>Phú Yên</li>
+                                            <li>Quảng Bình</li>
+                                            <li>Quảng Trị</li>
+                                            <li>Sóc Trăng</li>
+                                            <li>Sơn La</li>
+                                            <li>Tây Ninh</li>
+                                            <li>Thái Bình</li>
+                                            <li>Thanh Hóa</li>
+                                            <li>Trà Vinh</li>
+                                            <li>Vĩnh Long</li>
+                                            <li>Vĩnh Phúc</li>
+                                            <li>Yên Bái</li>
+                                            <li>Hòa Bình</li>
+                                            <li>Quảng Ninh</li>
+                                            <li>Ninh Bình</li>
+                                            <li>Tuyên Quang</li>
+                                            <li>Khánh Hòa</li>
+                                            <li>Hưng Yên</li>
+                                            <li>Hậu Giang</li>
+                                            <li>Hà Tĩnh</li>
+                                            <li>Hà Nam</li>
+                                            <li>Đắk Lắk</li>
+                                            <li>Hà Giang</li>
+                                            <li>Đồng Tháp</li>
+                                            <li>Hải Dương</li>
+                                            <li>Điện Biên</li>
+                                            <li>Đà Nẵng</li>
+                                            <li>Gia Lai</li>
+                                            <li>Đắk Nông</li>
+                                            <li>Cần Thơ</li>
+                                            <li>Cao Bằng</li>
+                                            <li>Cà Mau</li>
+                                            <li>Bình Thuận</li>
+                                            <li>Bình Phước</li>
+                                            <li>Bến Tre</li>
+                                            <li>Bình Định</li>
+                                            <li>Bắc Ninh</li>
+                                            <li>Bắc Kạn</li>
+                                            <li>Bắc Giang</li>
+                                            <li>Bạc Liêu</li>
+                                            <li>An Giang</li>
+                                            <li>Thái Nguyên</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="main-header__search-box">
+                            <input type="search" name="search" id="search" placeholder="Bạn tìm gì ...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <a class="main-header__order-account" href="../../views/look_up_order_info.html" target="_blank">Tài khoản &<br>Đơn hàng</a>
+                        <a class="main-header__cart" href="#" target="_blank"><i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span></a>
+                        <div class="main-header__tech-QA-game">
+                            <a href="#" target="_blank" id="main-header__tech">24h<br>Công nghệ</a>
+                            <a href="#" target="_blank" id="main-header__QA">Hỏi Đáp</a>
+                            <a href="#" target="_blank" id="main-header__GameAPP">Game App</a>
+                        </div>
+                    </div>
+                    <div class="main-header-desktop__row-2">
+                        <a href="static/views/cellphone/all-cellphones.html" target="_blank"><i class="fa-solid fa-mobile"></i><span>Điện thoại</span></a>
+                        <a href="static/views/laptop/all-laptops.html" target="_blank"><i class="fa-solid fa-laptop"></i><span>Laptop</span></a>
+                        <a href="#" target="_blank"><i class="fa-solid fa-tablet"></i><span>Tablet</span></a>
+                        <div class="main-header__accessory">
+                            <a href="#" target="_blank"><i class="fa-solid fa-headphones"></i><span>Phụ kiện</span><i class="fa-solid fa-sort-down" style="font-size: 15px; margin-bottom: 5px;"></i></a>
+                            <div class="main-header-accessory__list">
+                                <div class="main-header-accessory__list-up-arrow">
+                                    <div class="main-header-accessory__up-arrow"></div>
+                                </div>
+                                <table class="main-header-accessory__list-item">
+                                    <tr>
+                                        <td><strong>PHỤ KIỆN DI ĐỘNG</strong></td>
+                                        <td><strong>PHỤ KIỆN LAPTOP</strong></td>
+                                        <td><strong>THIẾT BỊ NHÀ THÔNG MINH</strong></td>
+                                        <td><strong>THƯƠNG HIỆU HÀNG ĐẦU</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Sạc dự phòng</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Chuột, bàn phím</a>
+                                        </td>
+                                        <td>
+                                            <a class="accessory--smart-home2" href="#" target="_blank" rel="noopener noreferrer">Camera, webcam</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Apple</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="accessory--mobile3" href="#" target="_blank" rel="noopener noreferrer">Sạc, cáp</a>
+                                        </td>
+                                        <td>
+                                            <a class="accessory--laptop3" href="#" target="_blank" rel="noopener noreferrer">Thiết bị mạng</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Máy chiếu</a>
+                                        </td>
+                                        <td>
+                                            <a class="top-brand3" href="#" target="_blank" rel="noopener noreferrer">Samsung</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Ốp lưng điện thoại</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Balo, túi chống sốc</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">TV Box</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Sony</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Ốp lưng máy tính bảng</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Phần mềm</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Ổ cắm, bóng đèn thông minh</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">JBL</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Miếng dán màn hình</a>
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Anker</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Gậy chụp ảnh, Gimbal</a>
+                                        </td>
+                                        <td><strong>THIẾT BỊ ÂM THANH</strong></td>
+                                        <td>
+                                            <strong>THIẾT BỊ LƯU TRỮ</strong>
+                                        </td>
+                                        <td>
+                                            <strong>PHỤ KIỆN KHÁC</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Giá đỡ điện thoại, laptop</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Tai nghe</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Ổ cứng di động</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Phụ kiện ô tô</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Đế, móc điện thoại</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Loa</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Thẻ nhớ</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Quạt mini</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Túi đựng AirPods</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Micro</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">USB</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Pin tiểu</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">AirTag, Vỏ bảo vệ AirTag</a>
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Bàn phím, bút tablet</a>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <a href="#" target="_blank"><i class='bx bxs-watch-alt'></i><span>Smartwatch</span></a>
+                        <a href="#" target="_blank"><i class='bx bxs-watch'></i><span>Đồng hồ</span></a>
+                        <a href="#" target="_blank"><i class='bx bx-mobile-alt'></i><span>Máy cũ giá rẻ</span></a>
+                        
+                        <div class="main-header__PC-printer">
+                            <a href="#" target="_blank"><i class="fa-solid fa-desktop"></i><span>PC, Máy in</span><i class="fa-solid fa-sort-down" style="font-size: 15px; margin-bottom: 5px;"></i></a>
+                            <div class="main-header-PC-printer__list">
+                                <div class="main-header-PC-printer__list-up-arrow">
+                                    <div class="main-header-PC-printer__up-arrow"></div>
+                                </div>
+                                <table class="main-header-PC-printer__list-item">
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank">Máy in</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank">Mực in</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank">Màn hình máy tính</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank">Máy tính để bàn</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank">Phần mềm</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <a href="#" target="_blank">Sim, Thẻ cào</a>
+                        <div class="main-header__covenient-service">
+                            <a href="#" target="_blank"><span>Dịch vụ tiện ích</span><i class="fa-solid fa-sort-down" style="font-size: 15px; margin-bottom: 5px;"></i></a>
+                            <div class="main-header-covenient-service__list">
+                                <div class="main-header-covenient-service__list-up-arrow">
+                                    <div class="main-header-covenient-service__up-arrow"></div>
+                                </div>
+                                <table class="main-header-covenient-service__list-item">
+                                    <tr>
+                                        <td>
+                                            <strong>THANH TOÁN HÓA ĐƠN</strong>
+                                        </td>
+                                        <td> 
+                                            <strong>TÀI CHÍNH - BẢO HIỂM</strong>
+                                        </td>
+                                        <td>
+                                            <strong>TIỆN ÍCH VIỄN THÔNG</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Đóng tiền trả góp</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Mua bảo hiểm xe máy, ô tô</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Mua gói data 3G, 4G</a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Đóng tiền điện</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Đóng tiền bảo hiểm</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Nạp tiền trả trước</a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Đóng tiền nước</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Mua gói truyền hình</a>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Nạp tiền trả sau</a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Đóng tiền NET FPT</a>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Thẻ cào game</a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Đóng tiền net, cáp VNPT</a>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Thẻ cào điện thoại</a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">Vé tàu, xe, máy bay</a>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-header-mobile">
+                    <div class="main-header-mobile__row-1">
+                        <div class="main-header__logo">
+                            <a href="#"><img src="../../images/index/header/TGDD_avatar.png" alt="logoTGDD" srcset=""></a>
+                        </div>
+                        <a class="main-header-mobile__inventory" href="#" target="_blank"><i class="fa-solid fa-location-dot"></i><span>Hồ Chí Minh</span></a>
+                        <a class="main-header__order-account" href="look_up_order_info.html" target="_blank">Tài khoản & Đơn hàng</a>
+                        <a class="main-header__cart" href="#" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="main-header__menu">
+                            <div class="main-header__menu-signs">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>Menu</p>
+                        </div>
+                    </div>
+                    <div class="main-header-mobile__row-2">
+                        <div class="main-header__search-box">
+                            <input type="search" name="search" id="search" placeholder="Bạn tìm gì ...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="main-header-mobile__row-3">
+                        <a href="#" target="_blank">Điện thoại</a>
+                        <a href="#" target="_blank">Laptop</a>
+                        <a href="#" target="_blank">Tablet</a>
+                        <a href="#" target="_blank">Phụ kiện</a>
+                        <a href="#" target="_blank">Smartwatch</a>
+                        <a href="#" target="_blank">Đồng hồ</a>
+                    </div>
+                </div>   
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="QA__title container">
+            <h1>HỎI ĐÁP VỀ SẢN PHẨM</h1>
+            <p><i class="fa-solid fa-circle-user"></i> Đăng nhập</p>
+        </section>
+        <section class="QA__content container grid wide">
+            <div class="row">
+                <div class="col l-4 m-0 s-0">
+                    <div class="QA__topics">
+                        <h2 class="p-tem">Chủ đề nổi bật</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot10-60x60.png" alt="" srcset="">
+                                        <span>Android</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Sản phẩm - Phiên bản mới</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Lỗi thường gặp</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tài khoản Android</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tư vấn chọn mua</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">ROOT Android</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Thủ thuật, mẹo - Hướng dẫn sử dụng</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Khôi phục - Reset</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot56-60x60.png" alt="" srcset="">
+                                        <span>iPhone - iOS</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Lỗi thường gặp</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tư vấn chọn mua</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Jailbreak iOS</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Sản phẩm - Phiên bản mới</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Apple ID - iCloud</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Thủ thuật, mẹo - Hướng dẫn sử dụng</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot40-60x60.png" alt="" srcset="">
+                                        <span>Đồng hồ thời trang</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Thương hiệu - Dòng sản phẩm nổi bật</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Mẹo - Hướng dẫn sử dụng</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tư vấn chọn mua</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tư vấn quà tặng</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/smartwatch-60x60.jpg" alt="" srcset="">
+                                        <span>Smart watch</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Thương hiệu - sản phẩm nổi bật</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Mẹo sử dụng</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tư vấn chọn mua</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot70-60x60.png" alt="" srcset="">
+                                        <span>Máy tính - Laptop - Tablet</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tư vấn mua sản phẩm</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">PC - Laptop Windows</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Thủ thuật, mẹo - Hướng dẫn sử dụng</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Máy Mac, MacBook (macOS)</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Sản phẩm, phiên bản mới</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Máy tính bảng</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot80-60x60.png" alt="" srcset="">
+                                        <span>Phụ kiện và sản phẩm khác</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Sim số - Thẻ cào</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Thủ thuật, mẹo - Hướng dẫn sử dụng</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Máy in - Mực in</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Phụ kiện</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Sản phẩm khác</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tư vấn chọn mua</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Điện thoại</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Máy tính bảng</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Laptop</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Mắt kính thời trang</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot60-60x60-1.png" alt="" srcset="">
+                                        <span>Máy in</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Mực máy in</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot100-60x60.png" alt="" srcset="">
+                                        <span>Thiết bị thông minh</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Smarthome</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Phụ kiện thông minh</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Smartcar - Smart Motor</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot50-60x60.png" alt="" srcset="">
+                                        <span>Điện máy</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tủ lạnh</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Máy lạnh</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Máy Giặt</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Gia dụng</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tivi</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot90-60x60.png" alt="" srcset="">
+                                        <span>Wiki - Thuật ngữ</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot30-60x60-1.png" alt="" srcset="">
+                                        <span>Mạng xã hội</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Line</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Ứng dụng khác</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Messenger Facebook</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Zalo</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook / Messenger</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <img src="https://cdn.tgdd.vn/2022/10/NewsCategory/Thumb/Screenshot110-60x60-1.png" alt="" srcset="">
+                                        <span>Thủ thuật văn phòng</span>
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Google Sheet</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Word</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-8 m-12 s-12">
+                    <div class="QA__articles">
+                        <p class="p-tem">QA information</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer__contents container">
+            <ul class="policy">
+                <a href="#" target="_blank">Tích điểm Quà tặng VIP</a>
+                <a href="#" target="_blank">Lịch sử mua hàng</a>
+                <a href="#" target="_blank">Tìm hiểu về mua trả góp</a>
+                <a href="#" target="_blank">Chính sách bảo hành</a>
+                <p>Xem thêm <i class="fa-solid fa-sort-down"></i></p>
+                <a href="#" target="_blank">Chính sách đổi trả</a>
+                <a href="#" target="_blank">Giao hàng & Thanh toán</a>
+                <a href="#" target="_blank">Hướng dẫn mua online</a>
+                <a href="#" target="_blank">Bán hàng doanh nghiệp</a>
+                <a href="#" target="_blank">Phiếu mua hàng</a>
+                <a href="#" target="_blank">In hóa đơn điện tử</a>
+                <a href="#" target="_blank">Quy chế hoạt động</a>
+                <a href="#" target="_blank">Chính sách xử lý dữ liệu cá nhân</a>
+                <a href="#" target="_blank">Nội quy cửa hàng</a>
+                <a href="#" target="_blank">Chất lượng phục vụ</a>
+                <a href="#" target="_blank">Cảnh báo giả mạo</a>
+                <a href="#" target="_blank">Chính sách khui hộp sản phẩm Apple</a>
+            </ul>
+            <ul class="company">
+                <a href="#" target="_blank">Giới thiệu công ty (MWG.vn)</a>
+                <a href="#" target="_blank">Tuyển dụng</a>
+                <a href="#" target="_blank">Gửi góp ý, khiếu nại</a>
+                <a href="#" target="_blank">Tìm siêu thị (3.361 shop)</a>
+                <a href="#" target="_blank">Xem bản mobile</a>
+            </ul>
+            <div class="contact">
+                <span><strong>Tổng đài hỗ trợ</strong> (Miễn phí gọi)</span>
+                <span>Gọi mua: <a href="#">1800.1060</a> (7:30 - 22:00)</span>
+                <span>Khiếu nại: <a href="#">1800.1062</a> (8:00 - 21:30)</span>
+                <span>Bảo hành: <a href="#">1800.1064</a> (8:00 - 21:00)</span>
+            </div>
+            <div class="information-discount--on-tablet-mobile">
+                <a href="#">Tìm 3.353 cửa hàng Thế Giới Di Động</a>
+                <a href="#">Tích điểm Quà tặng VIP</a>
+                <div class="other-information">
+                    <p>Các thông tin khác <i class="fa-solid fa-sort-down"></i></p>
+                    <ul>
+                        <li><a href="/lich-su-mua-hang">Lịch sử mua hàng</a></li>
+                        <li><a href="https://mwg.vn">Giới thiệu công ty (MWG.vn)</a></li>
+                        <li><a href="/huong-dan-mua-hang">Hướng dẫn mua online</a></li>
+                        <li><a href="/tra-gop">Tìm hiểu về mua trả góp</a></li>
+                        <li><a href="/chinh-sach-bao-hanh-san-pham">Chính sách đổi trả</a></li>
+                        <li><a href="/bao-hanh">Chính sách bảo hành</a></li>
+                        <li><a href="/giao-hang">Giao hàng, lắp đặt</a></li>
+                        <li><a href="/chinh-sach-khui-hop-apple">Chính sách khui hộp sản phẩm Apple</a></li>
+                        <li><a href="/tos">Quy chế hoạt động</a></li>
+                        <li><a href="/chinh-sach-xu-ly-du-lieu-ca-nhan">Chính sách xử lý dữ liệu cá nhân</a></li>
+                        <li><a href="/lien-he">Gửi góp ý, khiếu nại</a></li>
+                        <li><a href="/chat-luong-phuc-vu">Chất lượng phục vụ</a></li>
+                        <li><a href="/noi-quy-cua-hang">Nội quy cửa hàng</a></li>
+                        <li><a href="/tin-tuc/can-trong-voi-nhung-sieu-thi-thegioididong-khong-chinh-chu--683321">Cảnh
+                                báo giả mạo</a></li>
+                        <li><a href="/b2b">Bán hàng doanh nghiệp</a></li>
+                        <li><a href="/phieu-mua-hang">Phiếu mua hàng</a></li>
+                        <li><a href="https://hddt.thegioididong.com">In hoá đơn điện tử</a></li>
+                        <li><a href="https://vieclam.thegioididong.com">Tuyển dụng</a></li>
+                        <li><a href="https://www.thegioididong.com/?sclient=full">Xem bản desktop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="corporate-promotion">
+                <div class="social-channel">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i>3914.7k Fan</a>
+                    <a href="#"><i class='bx bxl-youtube'></i>861k Đăng ký</a>
+                    <a href="#"><img src="../../images/icon_zalo.webp" alt="zalo">Zalo TGDĐ</a>
+                </div>
+                <ul class="business-license">
+                    <a href="#"><img src="../../images/footer1.PNG" alt="license" srcset=""></a>
+                    <a href="#"><img src="../../images/footer2.PNG" alt="license" srcset=""></a>
+                    <a href="#"><img src="../../images/footer3.PNG" alt="license" srcset=""></a>
+                    <a href="#"><img src="../../images/footer4.PNG" alt="license" srcset=""></a>
+                </ul>
+                <div class="TGDD_group">
+                    <span>Website cùng tập đoàn</span>
+                    <ul class="subsidiaries">
+                        <a href="#"><img src="../../images/topzone.PNG" alt="sub" srcset=""></a>
+                        <a href="#"><img src="../../images/dienmayxanh.PNG" alt="sub" srcset=""></a>
+                        <a href="#"><img src="../../images/bachhoaxanh.PNG" alt="sub" srcset=""></a>
+                        <a href="#"><img src="../../images/nhathuocAnKhang.PNG" alt="sub" srcset=""></a>
+                        <a href="#"><img src="../../images/avakids.PNG" alt="sub" srcset=""></a>
+                        <a href="#"><img src="../../images/tantam.PNG" alt="sub" srcset=""></a>
+                        <a href="#"><img src="../../images/4kfarm.PNG" alt="sub" srcset=""></a>
+                        <a href="#"><img src="../../images/vieclam.PNG" alt="sub" srcset=""></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="summary-TGDD container">
+                <p>© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày
+                    02/01/2007.<br> <span>GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày
+                        04/06/2020.<br></span>
+                    Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.1, TP.Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô
+                    T2-1.2, Đường D1, Đ. D1, P.Tân Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+                    cskh@thegioididong.com.<br> Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Email:
+                    Tot.huynhvan@thegioididong.com. <a href="#" target="_blank">Xem chính sách sử dụng</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

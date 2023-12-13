@@ -1,0 +1,1 @@
+const QAcontent = document.querySelector(".QA__content")

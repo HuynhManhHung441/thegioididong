@@ -1,0 +1,99 @@
+.QA__title {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.QA__title h1 {
+  font-size: 1.8rem;
+  line-height: 4rem;
+  color: #288ad6;
+}
+
+.QA__title p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #333333;
+}
+
+.QA__title p i {
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #288ad6;
+}
+
+.QA__content {
+  /* max-width: 1140px; */
+  height: max-content;
+  /* background-color: darkgray; */
+}
+
+.QA__topics {
+  /* background-color: lightgreen; */
+  height: max-content;
+}
+
+.QA__topics h2 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #333333;
+}
+
+.QA__topics ul {
+  list-style-type: none;
+}
+
+.QA__topics div {
+  width: 95%;
+  height: 4.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #288ad6; */
+}
+
+.QA__topics div p {
+  height: 100%;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.QA__topics div p img {
+  display: inline-block;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  /* margin-right: 1rem; */
+}
+
+.QA__topics div p span {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: #333333;
+}
+
+.QA__topics div p span:hover {
+  color: #288ad6;
+}
+
+.QA__topics div i {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #333333;
+  margin-right: 0.5rem;
+}
+
+.QA__topics ul li ul {
+  display: none;
+}
+
+.QA__articles {
+  background-color: cadetblue;
+  height: max-content;
+}
