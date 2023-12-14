@@ -153,10 +153,12 @@
 }
 
 .QA-articles--is-viewed-a-lot {
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: start;
+  border-bottom: 1px solid #c8c8c8;
+  margin-top: 1rem;
 }
 
 a.QA-article--most-viewed {
@@ -237,4 +239,65 @@ a.QA-article--most-viewed {
 
 .QA-articles__top4 ul li a:hover p:last-child {
   color: #288ad6;
+}
+
+.QA-articles__items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.QA-articles__items a {
+  min-width: 100%;
+  height: 12.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #c8c8c8;
+  text-decoration: none;
+}
+
+.QA-articles__items a img {
+  display: block;
+  height: 100%;
+  aspect-ratio: 4/2;
+  object-fit: fill;
+  float: left;
+  margin-right: 2rem;
+}
+
+.QA-articles__items a p {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+.QA-articles__items a span {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #747474;
+  margin-right: 1rem;
+}
+
+.QA-articles__items a span:nth-child(4) {
+  display: inline-block;
+  width: 4px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 0.3rem 1rem 0.3rem 0;
+  background-color: #747474;
+}
+
+.QA-articles__items button {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+  background-color: #288ad6;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
 }
