@@ -95,12 +95,13 @@
   height: max-content;
   padding: 0 1rem;
   border: 1px solid #cccccc;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   list-style-type: none;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .QA__topics ul li ul::before {
