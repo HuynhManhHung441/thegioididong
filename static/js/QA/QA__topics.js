@@ -61,19 +61,27 @@ seeMoreQaArticleBtn.addEventListener("click", () => {
 })
 
 
+const qaCenterSlideshow = document.querySelector(".QA__center-slideshow");
+const qaCenterSlideshowDotList = qaCenterSlideshow.querySelectorAll(".QA-center-slideshow__dot-list li span");
+let curentIndexBanner = 0;
+
+function displaySlide (indexSlide, slideList) {
+    slideList.style.transform = `translateX(-${qaCenterSlideshow.clientWidth*indexSlide}px)`;
+}
 
 
+setInterval(() => {
+    let slideList = qaCenterSlideshow.querySelector(".QA-center-slideshow__banner-list")
+    console.log(slideList.childElementCount)
+    if (curentIndexBanner >= slideList.childElementCount) {
+        curentIndexBanner = 0;
+    }
+    console.log(curentIndexBanner);
 
-
-
-
-
-
-
-
-// qaArticleDivList.forEach(function(specificDiv){
-//     if
-// })
-
-// console.log(qaArticlesItems)
-
+    displaySlide(curentIndexBanner, slideList);
+    qaCenterSlideshowDotList.forEach(function(slideDot){
+        slideDot.style.backgroundColor = "#e0e0e0";
+    });
+    qaCenterSlideshowDotList[curentIndexBanner].style.backgroundColor = "#F2994A";
+    curentIndexBanner +=1;
+}, 3000)
