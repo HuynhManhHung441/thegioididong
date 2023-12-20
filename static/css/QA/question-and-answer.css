@@ -429,8 +429,12 @@ a.QA-article--most-viewed {
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: #e0e0e0;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
+
+/* .QA-center-slideshow__dot-list li span:nth-child(1) {
+  background-color: #f2994a;
+} */
 
 .QA__articles > button {
   width: 100%;

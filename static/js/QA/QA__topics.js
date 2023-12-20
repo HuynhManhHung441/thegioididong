@@ -72,19 +72,20 @@ function displaySlide (indexSlide, slideList) {
 
 setInterval(() => {
     let slideList = qaCenterSlideshow.querySelector(".QA-center-slideshow__banner-list")
-    console.log(slideList.childElementCount)
+    // console.log(slideList.childElementCount)
     var arrayFromDotList = Array.from(qaCenterSlideshowDotList);
     arrayFromDotList.forEach(function(dotElement, dotIndex) {
         dotElement.addEventListener("click", function() {
             curentIndexBanner = dotIndex;
-            console.log("indexDot is clicked", dotIndex)
+            // console.log("indexDot is clicked", dotIndex)
         })
     })
     if (curentIndexBanner >= slideList.childElementCount) {
         curentIndexBanner = 0;
     }
-    console.log(curentIndexBanner);
+    // console.log(curentIndexBanner);
 
+    qaCenterSlideshowDotList[curentIndexBanner].style.backgroundColor = "#F2994A";
     displaySlide(curentIndexBanner, slideList);
     qaCenterSlideshowDotList.forEach(function(slideDot){
         slideDot.style.backgroundColor = "#e0e0e0";
