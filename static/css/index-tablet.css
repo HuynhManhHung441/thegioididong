@@ -927,6 +927,7 @@
   }
 
   .featured-category__list a img {
+    /* display: block; */
     width: 30%;
   }
 

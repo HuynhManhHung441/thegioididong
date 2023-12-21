@@ -1694,7 +1694,6 @@ main {
 
 .featured-category__list a {
   display: flex;
-  margin-bottom: 2%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
@@ -1709,7 +1708,8 @@ main {
 .featured-category__list a img {
   display: block;
   width: 60%;
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
+  height: 60%;
   margin-bottom: 5%;
   object-fit: cover;
 }
